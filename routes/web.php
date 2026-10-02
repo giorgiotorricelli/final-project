@@ -25,7 +25,7 @@ Route::middleware(['auth', 'verified'])
     ->prefix('admin')
     ->group( function () {
         Route::get('/', [DashboardController::class, 'index'])
-            ->name('dashboard');
+            ->name('index');
         Route::get('/movies', [DashboardController::class, 'movies'])
             ->name('movies');
     } );

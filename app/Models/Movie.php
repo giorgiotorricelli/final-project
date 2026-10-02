@@ -6,5 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    //
+    protected $fillable = [
+        'tmdb_id',
+        'title',
+        'slug',
+        'description',
+        'release_date',
+        'rating',
+        'poster_path',
+        'backdrop_path',
+    ];
 }

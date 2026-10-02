@@ -1,1 +1,61 @@
 @import '~bootstrap/scss/bootstrap';
+
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*root variables*/
+
+:root {
+    --admin-header-height: 10vh;
+}
+
+/* fonts */
+
+.future-font {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.admin-body {
+    background-color: rgb(46, 0, 99);
+    min-height: calc(100vh - var(--admin-header-height));
+    color: white;
+}
+
+.admin-header {
+    min-height: var(--admin-header-height);
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 1px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-nav-btn {
+    background-color: rgb(161, 79, 255);
+}
+
+.admin-nav-btn:hover {
+    background-color: rgb(201, 154, 255);
+}
+
+
