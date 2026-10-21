@@ -1,0 +1,37 @@
+@props(['movie'])
+
+@php
+    $cleanDesc = str_replace('—', ', ', str_replace(' -', ', ', $movie->description));
+@endphp
+
+<div class="card-show-wrapper">
+    <div class="img-show-wrapper">
+        <img class="poster-show-img img-fluid" 
+             src="{{ Storage::url($movie->poster_path) }}" 
+             alt="{{ $movie->title }} poster">
+    </div>
+    <div class="card-show-body montserrat d-flex flex-column justify-content-between">
+        <div>
+            <p>{{ $cleanDesc }}</p>
+        </div>
+        <div class=" d-flex align-items-center justify-content-between">
+            <div>
+                <p class=" d-inline m-0">Rating:</p>
+                @for ($i = 0; $i < 10; $i++)
+                    @if ($movie->rating - $i < 0.75 && $movie->rating - $i > 0.25)
+                        <i class="bi bi-star-half"></i>
+                    @elseif ($i < $movie->rating)
+                        <i class="bi bi-star-fill"></i>
+                    @else
+                        <i class="bi bi-star"></i>
+                    @endif
+                @endfor
+                
+            </div>
+            <p class=" d-inline m-0">
+                {{ $movie->release_date }}
+            </p>
+        </div>
+    </div>
+</div>
+

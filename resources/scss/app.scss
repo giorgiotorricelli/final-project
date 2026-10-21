@@ -21,17 +21,17 @@
 /* fonts */
 
 .future-font {
-  font-family: "Syncopate", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .admin-body {
@@ -59,3 +59,101 @@
 }
 
 
+/*movie card*/
+
+.movie-card-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    /* Usa aspect-ratio per mantenere la proporzione classica dei poster (2:3) */
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.451);
+    border-radius: 0 0 15px 15px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Occupa lo spazio rimanente */
+}
+
+/*show*/
+
+.backdrop-wrapper {
+    position: relative; /* Necessario per posizionare il contenuto sopra il livello di sfondo */
+    height: calc(100vh - var(--admin-header-height));
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Creiamo un livello separato solo per lo sfondo con l'opacità */
+.backdrop-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: top; 
+    background-repeat: no-repeat;
+    background-image: var(--bg-image); /* Passiamo l'immagine tramite variabile CSS o inline */
+    opacity: 0.6;
+    z-index: 1; /* Lo mettiamo dietro */
+}
+
+.show-container {
+    position: relative;
+    z-index: 2; /* Assicura che i contenuti stiano sopra lo sfondo opacizzato */
+    padding: 3% 6%;
+}
+
+.card-show-wrapper {
+    height: calc(90vh - var(--admin-header-height));
+    display: flex;
+    overflow: hidden;
+    opacity: 1; /* Ora rimarrà perfettamente a 100% di visibilità */
+    padding: 15px 30px;
+    gap: 15px;
+    background-color: #0000006b;
+    border-radius: 30px;
+}
+
+.img-show-wrapper {
+    aspect-ratio: 2 / 3;
+    flex-shrink: 0;
+}
+
+.poster-show-img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+}
+
+/* Movies index table */
+
+.table-manage {
+    text-align: center;
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 0 10px;
+}

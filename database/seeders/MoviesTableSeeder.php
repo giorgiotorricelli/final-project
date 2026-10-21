@@ -7,13 +7,8 @@ use Illuminate\Database\Seeder;
 use App\Models\Movie; //import il model
 use Illuminate\Support\Facades\File; //importo la facade File
 use Illuminate\Support\Carbon; //importo carbon per il parsing (string to date)
+use Illuminate\Support\Str;
 
-function slugify($title, $release) {
-    $sTitle = strtolower(str_replace(" ", "_", $title)); 
-    $slug = $sTitle . $release;
-
-    return $slug;
-}
 
 class MoviesTableSeeder extends Seeder
 {
@@ -37,7 +32,7 @@ class MoviesTableSeeder extends Seeder
 
             $newMovie->tmdb_id = $movie['tmdb_id'];
             $newMovie->title = $movie['title'];
-            $newMovie->slug = slugify($movie['title'], $movie['release_date']);
+            $newMovie->slug = Str::slug($movie['title'] . ' ' . $movie['release_date']);
             $newMovie->description = $movie['description'];
             $newMovie->release_date = Carbon::parse($movie['release_date']);
             $newMovie->rating = $movie['rating'];

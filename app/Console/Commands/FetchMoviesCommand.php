@@ -49,7 +49,7 @@ class FetchMoviesCommand extends Command
 
         for ($page = 1; $page <= $totalPages; $page++) {
             $response = Http::withToken($bearerToken)
-                ->get("{$baseUrl}/movie/popular", [
+                ->get("{$baseUrl}/3/movie/popular", [
                     'page'     => $page,
                 ]);
 
