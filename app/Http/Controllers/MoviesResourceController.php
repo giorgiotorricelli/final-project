@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Http\Requests\StoreMovieRequest; //importo della mia request di validazione personalizzata
 use Illuminate\Http\Request;
@@ -34,11 +35,9 @@ class MoviesResourceController extends Controller
     {
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
-        $slugList = Movie::pluck('slug')->toArray();
-
         
         // 2. CONTROLLO MANUALE DEL DOPPIONE NEL DB
-        if (in_array($slug, $slugList)) {
+        if (Movie::where('slug', $slug)->exists()) {
             // Se esiste già, torniamo indietro bloccando tutto, 
             // tenendo i vecchi input e stampando l'errore sul campo 'title'
             return back()
@@ -60,6 +59,14 @@ class MoviesResourceController extends Controller
 
         // 4. Aggiungiamo lo slug ai dati validati
         $validated['slug'] = $slug;
+
+        if (isset($validated['poster_path'])) {
+            $validated['poster_path'] = Storage::disk('public')->put('posters', $validated['poster_path']);
+        }
+        
+        if (isset($validated['backdrop_path'])) {
+            $validated['backdrop_path'] = Storage::disk('public')->put('backdrops', $validated['backdrop_path']);
+        }
 
         // 5. Salviamo nel database
         Movie::create($validated);
@@ -96,8 +103,9 @@ class MoviesResourceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Movie $movie)
     {
-        //
+        $movie->delete();
+        return redirect()->route('admin.movies.index');
     }
 }

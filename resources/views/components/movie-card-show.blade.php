@@ -4,13 +4,13 @@
     $cleanDesc = str_replace('—', ', ', str_replace(' -', ', ', $movie->description));
 @endphp
 
-<div class="card-show-wrapper">
+<div class="card-show-wrapper w-100">
     <div class="img-show-wrapper">
         <img class="poster-show-img img-fluid" 
              src="{{ Storage::url($movie->poster_path) }}" 
              alt="{{ $movie->title }} poster">
     </div>
-    <div class="card-show-body montserrat d-flex flex-column justify-content-between">
+    <div class="card-show-body montserrat d-flex flex-column justify-content-between  w-100">
         <div>
             <p>{{ $cleanDesc }}</p>
         </div>

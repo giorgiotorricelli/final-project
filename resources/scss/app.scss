@@ -61,10 +61,20 @@
 
 /*movie card*/
 
+.movie-link {
+    text-decoration: none; 
+    color: white;
+}
+
 .movie-card-wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
+    transition: all 0.1s;
+}
+
+.movie-card-wrapper:hover {
+    translate: 0 -4px;
 }
 
 .img-wrapper {
@@ -153,7 +163,76 @@
     text-align: center;
 }
 
-table {
+.movies-table {
     border-collapse: separate; 
     border-spacing: 0 10px;
+}
+
+th {
+    padding: 6px 0;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+.movies-table tr th:first-child,
+.movies-table tr td:first-child {
+    padding-left: 9px;
+}
+
+.movies-table tr td {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+/* Se vuoi chiudere anche i lati sinistro e destro della prima e dell'ultima cella */
+.movies-table tr td:first-child {
+    border-left: 1px solid #e0e0e0;
+    border-top-left-radius: 8px;   /* Opzionale: angoli arrotondati */
+    border-bottom-left-radius: 8px;
+}
+
+.movies-table tr td:last-child {
+    border-right: 1px solid #e0e0e0;
+    border-top-right-radius: 8px;  /* Opzionale: angoli arrotondati */
+    border-bottom-right-radius: 8px;
+}
+
+/* Movies create form*/
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+/* Effetto hover specifico sull'icona */
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05); /* Esempio di sfondo al passaggio */
+  border-radius: 4px;
+}
+
+input[type="date"]:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  cursor: pointer;
+}
+
+input[type="range"]:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
+}
+
+input[type="range"]:focus {
+    color: black;
+    background-color: none;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
 }
