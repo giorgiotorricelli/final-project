@@ -236,3 +236,16 @@ input[type="range"]:focus {
     outline: 0;
     box-shadow: none;
 }
+
+.list-sort-btn {
+    position: absolute;
+    z-index: 5;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color:plum;
+    transition: all 0.2s;
+}
+
+.list-sort-btn:hover {
+    color: rgb(243, 193, 243);
+}
