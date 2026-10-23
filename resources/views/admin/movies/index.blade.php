@@ -100,16 +100,13 @@
     </div>
     <script>
     
-        let moviesListDefault = @json($movieList); // prendo l'array associativo php e lo trasformo in oggetto js
+        let sortedList = @json($movieList); // prendo l'array associativo php e lo trasformo in oggetto js
         let tbody = document.getElementById('tbody'); // prendo il body della tabella
         let tempContainer = ''; // uso un container temporaneo
-        let sortedList = moviesListDefault;
 
         function sortedBy(btn) { //qua passeremo l'event.target
             // abbiamo 4 tipi di sort: id, title, release_date, rating. Li capiamo dagli HTML id dei pulsanti
             // la funzione deve ordinare sortedList senza ritornare nulla :)
-            console.log('sono in sortedby');
-            console.log(btn);
 
             if (btn.id === 'sortByIdBtn') { // sort per id
                 if (btn.classList.contains('bi-arrow-up-circle')) {
@@ -164,7 +161,6 @@
         }
 
         function renderMovies() {
-            console.log('sono in rendermovies');
             
             tbody.innerHTML = ``; // svuoto tbody
 
@@ -176,8 +172,9 @@
                             <td>${movie.rating}</td>
                             <td class="table-manage" onclick="event.stopPropagation()">
                                 <div>
-                                    <a href="http://localhost:8000/admin/movies/${movie.slug}" class="btn btn-success"><i class=" bi bi-pencil-square"></i></a>
-                                    <!-- button trigger modal -->
+                                    <!-- button trigger edit page -->
+                                    <a href="http://localhost:8000/admin/movies/${movie.slug}/edit" class="btn btn-success"><i class=" bi bi-pencil-square"></i></a>
+                                    <!-- button trigger deletion modal -->
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                         <i class=" bi bi-trash"></i>
                                     </button>
@@ -222,7 +219,6 @@
                 // *logica visualizzazione lista*
 
                 sortedBy(target);
-                console.log(sortedList);
                 
 
                 return;
@@ -235,7 +231,6 @@
             let allBtns = document.querySelectorAll('.list-sort-btn');
             
             allBtns.forEach(btn => {
-                console.log(btn.classList.length);
                 if (btn.classList.length > 2) { // quindi il bottone con le frecce
                     btn.classList.remove('bi-arrow-down-circle','bi-arrow-up-circle');
                     btn.classList.add('bi-circle');
@@ -247,7 +242,6 @@
 
             // *logica visualizzazione lista*
             sortedBy(target);
-            console.log(sortedList);
 
         }
     </script>

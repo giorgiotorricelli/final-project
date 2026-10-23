@@ -87,9 +87,11 @@ class MoviesResourceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $slug)
     {
-        //
+        $movie = Movie::where('slug', $slug)->firstOrFail();
+
+        return view('admin.movies.edit', compact('movie'));
     }
 
     /**
