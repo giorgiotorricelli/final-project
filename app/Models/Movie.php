@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Genre;
 
 class Movie extends Model
 {
@@ -16,4 +17,8 @@ class Movie extends Model
         'poster_path',
         'backdrop_path',
     ];
+
+    public function genres() {
+        return $this->belongsToMany(Genre::class);
+    }
 }
