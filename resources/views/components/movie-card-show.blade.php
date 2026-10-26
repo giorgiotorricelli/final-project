@@ -7,11 +7,19 @@
 <div class="card-show-wrapper w-100">
     <div class="img-show-wrapper">
         <img class="poster-show-img img-fluid" 
-             src="{{ Storage::url($movie->poster_path) }}" 
-             alt="{{ $movie->title }} poster">
+             src="{{ $movie->poster_path ? Storage::url($movie->poster_path) : 'https://placehold.co/400x600/c99aff/000/png?text=Poster+:)' }}" 
+             alt="{{ $movie->title }} poster"> 
     </div>
-    <div class="card-show-body montserrat d-flex flex-column justify-content-between  w-100">
+    <div class="card-show-body montserrat d-flex flex-column justify-content-between  w-100 position-relative">
+        <div class=" position-absolute" style="right: 0">
+                <a href="{{ route('admin.movies.edit', $movie->slug) }}" class="btn btn-success"><i class=" bi bi-pencil-square"></i></a>
+                <!-- button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                    <i class=" bi bi-trash"></i>
+                </button>
+            </div>
         <div>
+            <h3>{{ $movie->title }}</h3>
             <p>{{ $cleanDesc }}</p>
         </div>
         <div class=" d-flex align-items-center justify-content-between">
@@ -34,4 +42,5 @@
         </div>
     </div>
 </div>
+
 

@@ -15,11 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('title', 50);
             $table->string('slug')->unique();
-            $table->date('release_date')->nullable();
-            $table->unsignedSmallInteger('duration')->nullable();
+            $table->date('release_date');
             $table->string('poster_path')->nullable();
+            $table->string('backdrop_path')->nullable();
             $table->text('description')->nullable();
-            $table->string('trailer_url')->nullable();
             $table->timestamps();
         });
     }

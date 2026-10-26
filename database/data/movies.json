@@ -5,12 +5,26 @@
         "original_title": "Spider-Man: Brand New Day",
         "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
         "release_date": "2026-07-29",
-        "rating": 8.47,
+        "rating": 8.474,
         "poster_path": "\/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
         "backdrop_path": "\/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
         "genre_ids": [
             878,
             28,
+            12
+        ]
+    },
+    {
+        "tmdb_id": 687163,
+        "title": "Project Hail Mary",
+        "original_title": "Project Hail Mary",
+        "description": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+        "release_date": "2026-03-15",
+        "rating": 8.633,
+        "poster_path": "\/iOb2fjXLbpJgyQXe46n1WtGCnaa.jpg",
+        "backdrop_path": "\/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+        "genre_ids": [
+            878,
             12
         ]
     },
@@ -30,27 +44,12 @@
         ]
     },
     {
-        "tmdb_id": 1368337,
-        "title": "The Odyssey",
-        "original_title": "The Odyssey",
-        "description": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-        "release_date": "2026-07-15",
-        "rating": 8,
-        "poster_path": "\/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-        "backdrop_path": "\/nVBzWBqHTB3XD0iqWiJLfKLo5fq.jpg",
-        "genre_ids": [
-            12,
-            28,
-            14
-        ]
-    },
-    {
         "tmdb_id": 1058424,
         "title": "Hope",
         "original_title": "호프",
         "description": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
         "release_date": "2026-07-15",
-        "rating": 6.9,
+        "rating": 6.784,
         "poster_path": "\/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
         "backdrop_path": "\/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
         "genre_ids": [
@@ -60,12 +59,55 @@
         ]
     },
     {
+        "tmdb_id": 1368337,
+        "title": "The Odyssey",
+        "original_title": "The Odyssey",
+        "description": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+        "release_date": "2026-07-15",
+        "rating": 8.015,
+        "poster_path": "\/krVa7rKCQb4OBfsr2LTJv4rTz5q.jpg",
+        "backdrop_path": "\/bulFtfy3oBQtCnAMSi7g6DSSds3.jpg",
+        "genre_ids": [
+            12,
+            28,
+            14
+        ]
+    },
+    {
+        "tmdb_id": 1101412,
+        "title": "Fall 2: Deadpoint",
+        "original_title": "Fall 2: Deadpoint",
+        "description": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
+        "release_date": "2026-09-01",
+        "rating": 7.292,
+        "poster_path": "\/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
+        "backdrop_path": "\/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
+        "genre_ids": [
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1400940,
+        "title": "Clayface",
+        "original_title": "Clayface",
+        "description": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+        "release_date": "2026-10-19",
+        "rating": 7.576,
+        "poster_path": "\/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
+        "backdrop_path": "\/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+        "genre_ids": [
+            27,
+            53,
+            878
+        ]
+    },
+    {
         "tmdb_id": 1153576,
         "title": "Street Fighter",
         "original_title": "Street Fighter",
         "description": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
         "release_date": "2026-10-13",
-        "rating": 6.198,
+        "rating": 6.4,
         "poster_path": "\/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
         "backdrop_path": "\/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
         "genre_ids": [
@@ -74,12 +116,26 @@
         ]
     },
     {
+        "tmdb_id": 1291595,
+        "title": "Insidious: Out of the Further",
+        "original_title": "Insidious: Out of the Further",
+        "description": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+        "release_date": "2026-08-19",
+        "rating": 7.708,
+        "poster_path": "\/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+        "backdrop_path": "\/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+        "genre_ids": [
+            27,
+            53
+        ]
+    },
+    {
         "tmdb_id": 1148365,
         "title": "Matchbox the Movie",
         "original_title": "Matchbox the Movie",
         "description": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
         "release_date": "2026-10-05",
-        "rating": 7.798,
+        "rating": 7.742,
         "poster_path": "\/aHhHRz6nOpwkqJs5ASeRGAdK2dt.jpg",
         "backdrop_path": "\/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
         "genre_ids": [
@@ -89,239 +145,17 @@
         ]
     },
     {
-        "tmdb_id": 1255833,
-        "title": "Whalefall",
-        "original_title": "Whalefall",
-        "description": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-        "release_date": "2026-10-14",
-        "rating": 6.486,
-        "poster_path": "\/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-        "backdrop_path": "\/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
-        "genre_ids": [
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1291595,
-        "title": "Insidious: Out of the Further",
-        "original_title": "Insidious: Out of the Further",
-        "description": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-        "release_date": "2026-08-19",
-        "rating": 7.727,
-        "poster_path": "\/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-        "backdrop_path": "\/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
-        "genre_ids": [
-            27,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1400837,
-        "title": "Other Mommy",
-        "original_title": "Other Mommy",
-        "description": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-        "release_date": "2026-10-07",
-        "rating": 5.923,
-        "poster_path": "\/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-        "backdrop_path": "\/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-        "genre_ids": [
-            27
-        ]
-    },
-    {
-        "tmdb_id": 1101412,
-        "title": "Fall 2: Deadpoint",
-        "original_title": "Fall 2: Deadpoint",
-        "description": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
-        "release_date": "2026-09-01",
-        "rating": 7.268,
-        "poster_path": "\/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
-        "backdrop_path": "\/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
-        "genre_ids": [
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1228834,
-        "title": "The Fix",
-        "original_title": "The Fix",
-        "description": "Disillusioned by the end of the war in Afghanistan, a group of disgraced, war-torn ex-CIA operatives set out to Tehran to take down a life-changing score.",
-        "release_date": "2026-09-10",
-        "rating": 6.607,
-        "poster_path": "\/jlP8XDjZN89GrpM3je5Uf8Grqx8.jpg",
-        "backdrop_path": "\/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
-        "genre_ids": [
-            28,
-            53
-        ]
-    },
-    {
         "tmdb_id": 1561726,
         "title": "Masterplan",
         "original_title": "Masterplan",
         "description": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
         "release_date": "2026-10-16",
-        "rating": 7.096,
+        "rating": 7.012,
         "poster_path": "\/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
-        "backdrop_path": "\/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
+        "backdrop_path": "\/fAlQZsCOCvxOj0PmFmt4i8IWR2u.jpg",
         "genre_ids": [
             28,
             53
-        ]
-    },
-    {
-        "tmdb_id": 1284186,
-        "title": "Sacrifice",
-        "original_title": "Sacrifice",
-        "description": "During a star-studded charity gala brimming with celebrities, billionaires, and empty speeches, a movie star in the midst of an existential crisis is taken hostage by a radical warrior and her devoted followers. As the night descends into chaos, both an inward journey and an outward adventure ensue, where the line between performance and belief, salvation and sacrifice, begins to blur.",
-        "release_date": "2026-04-09",
-        "rating": 5.049,
-        "poster_path": "\/SGH7mlgfDyGgRCi2At62Ljg3zV.jpg",
-        "backdrop_path": "\/oAUf1pvGlafCZVlEuPt1JyONHR1.jpg",
-        "genre_ids": [
-            12,
-            35,
-            28
-        ]
-    },
-    {
-        "tmdb_id": 1236045,
-        "title": "Animals",
-        "original_title": "Animals",
-        "description": "When the son of an L.A. mayoral candidate is kidnapped, he and his wife have a few hours to come up with the ransom payment. With most of their money spent on his political campaign, they have to get their hands dirty and expose a side of their lives they never intended to see the light of day.",
-        "release_date": "2026-10-09",
-        "rating": 7.03,
-        "poster_path": "\/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
-        "backdrop_path": "\/tzoarEu7TsG959upiELyYPm5kO9.jpg",
-        "genre_ids": [
-            53,
-            18
-        ]
-    },
-    {
-        "tmdb_id": 1423191,
-        "title": "Resident Evil",
-        "original_title": "Resident Evil",
-        "description": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-        "release_date": "2026-09-16",
-        "rating": 7.293,
-        "poster_path": "\/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-        "backdrop_path": "\/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-        "genre_ids": [
-            27,
-            878,
-            12
-        ]
-    },
-    {
-        "tmdb_id": 1248832,
-        "title": "Digger",
-        "original_title": "Digger",
-        "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-        "release_date": "2026-09-28",
-        "rating": 7.485,
-        "poster_path": "\/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-        "backdrop_path": "\/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-        "genre_ids": [
-            35,
-            18
-        ]
-    },
-    {
-        "tmdb_id": 1377237,
-        "title": "Runner",
-        "original_title": "Runner",
-        "description": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
-        "release_date": "2026-09-07",
-        "rating": 8.334,
-        "poster_path": "\/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-        "backdrop_path": "\/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
-        "genre_ids": [
-            28,
-            35
-        ]
-    },
-    {
-        "tmdb_id": 1281331,
-        "title": "The Social Reckoning",
-        "original_title": "The Social Reckoning",
-        "description": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-        "release_date": "2026-10-07",
-        "rating": 6.958,
-        "poster_path": "\/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
-        "backdrop_path": "\/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-        "genre_ids": [
-            18,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1712451,
-        "title": "Resident Dead",
-        "original_title": "Resident Dead",
-        "description": "A man keeping his recently zombified daughter secure in hopes of a cure is tasked with delivering an unknown package through hordes of undead. If he succeeds, he will be given a cure for his daughter. If he fails, or opens the package, they will both be killed.",
-        "release_date": "2026-09-04",
-        "rating": 5.6,
-        "poster_path": "\/qKhMVWwFikSUzOpkhOl35GBLkGH.jpg",
-        "backdrop_path": "\/yKx5gYrYgakKZuUWAsuFDStBroy.jpg",
-        "genre_ids": [
-            27
-        ]
-    },
-    {
-        "tmdb_id": 1170608,
-        "title": "Dune: Part Three",
-        "original_title": "Dune: Part Three",
-        "description": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
-        "release_date": "2026-12-15",
-        "rating": 0,
-        "poster_path": "\/xKCdkfKmEqS0mKpWgHTeWuISHS3.jpg",
-        "backdrop_path": "\/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
-        "genre_ids": [
-            878,
-            12
-        ]
-    },
-    {
-        "tmdb_id": 1765072,
-        "title": "You Can See Everything",
-        "original_title": "You Can See Everything",
-        "description": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-        "release_date": "2026-10-16",
-        "rating": 8.938,
-        "poster_path": "\/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
-        "backdrop_path": "\/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
-        "genre_ids": [
-            99
-        ]
-    },
-    {
-        "tmdb_id": 1302904,
-        "title": "Practical Magic 2",
-        "original_title": "Practical Magic 2",
-        "description": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-        "release_date": "2026-09-09",
-        "rating": 7.023,
-        "poster_path": "\/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-        "backdrop_path": "\/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
-        "genre_ids": [
-            10749,
-            14,
-            35
-        ]
-    },
-    {
-        "tmdb_id": 1503762,
-        "title": "Sense and Sensibility",
-        "original_title": "Sense and Sensibility",
-        "description": "A charming, witty, and deeply relatable story of love and sisterhood.",
-        "release_date": "2026-09-23",
-        "rating": 7.384,
-        "poster_path": "\/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-        "backdrop_path": "\/nrLVr8C2pkbOGwXKay2xrxvlHmh.jpg",
-        "genre_ids": [
-            18,
-            10749
         ]
     },
     {
@@ -330,7 +164,7 @@
         "original_title": "Buddy",
         "description": "A magical, singing orange unicorn holds his cast hostage in a surreal TV-show dimension, as he becomes more and more demented.",
         "release_date": "2026-08-27",
-        "rating": 7.115,
+        "rating": 7.049,
         "poster_path": "\/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
         "backdrop_path": "\/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
         "genre_ids": [
@@ -340,46 +174,57 @@
         ]
     },
     {
-        "tmdb_id": 1375161,
-        "title": "Don't Move",
-        "original_title": "Don't Move",
-        "description": "A church group's annual retreat turns deadly when they wander into the wrong part of the Ozark wilderness, and something starts picking them off one by one.  Suspicion falls on Ricky, the troublemaker of the group. But the real threat is far worse.  Deep in the forest, wrapped in a labyrinth of webs, the group is pursued by a terrifying prehistoric arachnid that hunts by vibration. When every step could be their last, they only have one choice: Don't Move.  It's up to Megan to hold what's left of the group together and get them out alive.",
-        "release_date": "2026-09-11",
-        "rating": 5.222,
-        "poster_path": "\/uh0ZSdM8iOQgHwnUlhhanP8Dkl6.jpg",
-        "backdrop_path": "\/1b0wNCRLYT3mGwvHyTEbqOk98Ix.jpg",
+        "tmdb_id": 1400837,
+        "title": "Other Mommy",
+        "original_title": "Other Mommy",
+        "description": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+        "release_date": "2026-10-07",
+        "rating": 5.826,
+        "poster_path": "\/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+        "backdrop_path": "\/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
         "genre_ids": [
-            27,
+            27
+        ]
+    },
+    {
+        "tmdb_id": 1228834,
+        "title": "The Fix",
+        "original_title": "The Fix",
+        "description": "Disillusioned by the end of the war in Afghanistan, a group of disgraced, war-torn ex-CIA operatives set out to Tehran to take down a life-changing score.",
+        "release_date": "2026-09-10",
+        "rating": 6.253,
+        "poster_path": "\/jlP8XDjZN89GrpM3je5Uf8Grqx8.jpg",
+        "backdrop_path": "\/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
+        "genre_ids": [
+            28,
             53
         ]
     },
     {
-        "tmdb_id": 1084244,
-        "title": "Toy Story 5",
-        "original_title": "Toy Story 5",
-        "description": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-        "release_date": "2026-06-17",
-        "rating": 8.28,
-        "poster_path": "\/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-        "backdrop_path": "\/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+        "tmdb_id": 1423191,
+        "title": "Resident Evil",
+        "original_title": "Resident Evil",
+        "description": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+        "release_date": "2026-09-16",
+        "rating": 7.309,
+        "poster_path": "\/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+        "backdrop_path": "\/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
         "genre_ids": [
-            16,
-            10751,
-            35,
+            27,
+            878,
             12
         ]
     },
     {
-        "tmdb_id": 1294189,
-        "title": "The Mongoose",
-        "original_title": "The Mongoose",
-        "description": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
-        "release_date": "2026-10-29",
-        "rating": 0,
-        "poster_path": "\/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
-        "backdrop_path": "\/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
+        "tmdb_id": 1255833,
+        "title": "Whalefall",
+        "original_title": "Whalefall",
+        "description": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+        "release_date": "2026-10-14",
+        "rating": 6.604,
+        "poster_path": "\/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+        "backdrop_path": "\/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
         "genre_ids": [
-            28,
             53
         ]
     },
@@ -399,163 +244,133 @@
         ]
     },
     {
-        "tmdb_id": 15196,
-        "title": "Clue",
-        "original_title": "Clue",
-        "description": "Clue finds six colorful dinner guests gathered at the mansion of their host, Mr. Boddy -- who turns up dead after his secret is exposed: He was blackmailing all of them. With the killer among them, the guests and Boddy's chatty butler must suss out the culprit before the body count rises.",
-        "release_date": "1985-12-13",
-        "rating": 7.216,
-        "poster_path": "\/aRxbYOYHS8T73nzR8hsLousoplR.jpg",
-        "backdrop_path": "\/rsclb1vtH6IkxmVBuCC37biEBT.jpg",
+        "tmdb_id": 1236045,
+        "title": "Animals",
+        "original_title": "Animals",
+        "description": "When the son of an L.A. mayoral candidate is kidnapped, he and his wife have a few hours to come up with the ransom payment. With most of their money spent on his political campaign, they have to get their hands dirty and expose a side of their lives they never intended to see the light of day.",
+        "release_date": "2026-10-09",
+        "rating": 6.966,
+        "poster_path": "\/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
+        "backdrop_path": "\/tzoarEu7TsG959upiELyYPm5kO9.jpg",
+        "genre_ids": [
+            53,
+            18,
+            28,
+            80
+        ]
+    },
+    {
+        "tmdb_id": 1765072,
+        "title": "You Can See Everything",
+        "original_title": "You Can See Everything",
+        "description": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+        "release_date": "2026-10-16",
+        "rating": 9.1,
+        "poster_path": "\/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+        "backdrop_path": "\/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
+        "genre_ids": [
+            99
+        ]
+    },
+    {
+        "tmdb_id": 1712451,
+        "title": "Resident Dead",
+        "original_title": "Resident Dead",
+        "description": "A man keeping his recently zombified daughter secure in hopes of a cure is tasked with delivering an unknown package through hordes of undead. If he succeeds, he will be given a cure for his daughter. If he fails, or opens the package, they will both be killed.",
+        "release_date": "2026-09-04",
+        "rating": 5.481,
+        "poster_path": "\/qKhMVWwFikSUzOpkhOl35GBLkGH.jpg",
+        "backdrop_path": "\/yKx5gYrYgakKZuUWAsuFDStBroy.jpg",
+        "genre_ids": [
+            27
+        ]
+    },
+    {
+        "tmdb_id": 1302904,
+        "title": "Practical Magic 2",
+        "original_title": "Practical Magic 2",
+        "description": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+        "release_date": "2026-09-09",
+        "rating": 7.128,
+        "poster_path": "\/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+        "backdrop_path": "\/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
+        "genre_ids": [
+            10749,
+            14,
+            35
+        ]
+    },
+    {
+        "tmdb_id": 791523,
+        "title": "Wildwood",
+        "original_title": "Wildwood",
+        "description": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
+        "release_date": "2026-10-19",
+        "rating": 8.852,
+        "poster_path": "\/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+        "backdrop_path": "\/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
+        "genre_ids": [
+            16,
+            12,
+            14
+        ]
+    },
+    {
+        "tmdb_id": 1294189,
+        "title": "The Mongoose",
+        "original_title": "The Mongoose",
+        "description": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
+        "release_date": "2026-10-29",
+        "rating": 8.6,
+        "poster_path": "\/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
+        "backdrop_path": "\/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
+        "genre_ids": [
+            28,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1248832,
+        "title": "Digger",
+        "original_title": "Digger",
+        "description": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+        "release_date": "2026-09-28",
+        "rating": 7.495,
+        "poster_path": "\/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+        "backdrop_path": "\/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
         "genre_ids": [
             35,
-            80,
-            9648
+            18
         ]
     },
     {
-        "tmdb_id": 1400940,
-        "title": "Clayface",
-        "original_title": "Clayface",
-        "description": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-        "release_date": "2026-10-19",
-        "rating": 7.3,
-        "poster_path": "\/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-        "backdrop_path": "\/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-        "genre_ids": [
-            27,
-            53,
-            878
-        ]
-    },
-    {
-        "tmdb_id": 1234139,
-        "title": "Jailer 2",
-        "original_title": "ஜெயிலர் 2",
-        "description": "When a dangerous syndicate expands its reach to threaten his family's peace, retired jailer Tiger Muthuvel Pandian goes undercover as a driver. Operating from the shadows, he takes on ruthless new enemies to protect his home.",
-        "release_date": "2026-10-14",
-        "rating": 8,
-        "poster_path": "\/upwdEyhhYZ7pT2hD535fr2MGfpx.jpg",
-        "backdrop_path": "\/zpHTOdRl7GEPqFsDGqsN6Hi9Ylt.jpg",
+        "tmdb_id": 1377237,
+        "title": "Runner",
+        "original_title": "Runner",
+        "description": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+        "release_date": "2026-09-07",
+        "rating": 8.343,
+        "poster_path": "\/vJk2TW1QZAmBiD7oj9ZF9EPTYY1.jpg",
+        "backdrop_path": "\/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
         "genre_ids": [
             28,
             35
         ]
     },
     {
-        "tmdb_id": 1147572,
-        "title": "Narnia: The Magician's Nephew",
-        "original_title": "Narnia: The Magician's Nephew",
-        "description": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
-        "release_date": "2027-02-10",
-        "rating": 0,
-        "poster_path": "\/yrqR0qquy4JOfqZCsFJV7vJoOSh.jpg",
-        "backdrop_path": "\/3jA1wHHFl3lUcVdGXq4ZsBscHCU.jpg",
+        "tmdb_id": 1084244,
+        "title": "Toy Story 5",
+        "original_title": "Toy Story 5",
+        "description": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+        "release_date": "2026-06-17",
+        "rating": 8.275,
+        "poster_path": "\/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+        "backdrop_path": "\/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
         "genre_ids": [
-            14,
-            12,
-            10751
-        ]
-    },
-    {
-        "tmdb_id": 1275779,
-        "title": "Disclosure Day",
-        "original_title": "Disclosure Day",
-        "description": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-        "release_date": "2026-06-10",
-        "rating": 7.445,
-        "poster_path": "\/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-        "backdrop_path": "\/1e0KDRYKRPHiVNj8yQKYuU2jVyQ.jpg",
-        "genre_ids": [
-            878,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1101383,
-        "title": "The End of Oak Street",
-        "original_title": "The End of Oak Street",
-        "description": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
-        "release_date": "2026-08-12",
-        "rating": 7.082,
-        "poster_path": "\/hkPxuAMEqIqo1HCtIi4sqx0GRuP.jpg",
-        "backdrop_path": "\/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-        "genre_ids": [
-            878,
-            9648,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1288069,
-        "title": "Tenzing",
-        "original_title": "Tenzing",
-        "description": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
-        "release_date": "2026-10-09",
-        "rating": 8.389,
-        "poster_path": "\/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
-        "backdrop_path": "\/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
-        "genre_ids": [
-            18,
-            36
-        ]
-    },
-    {
-        "tmdb_id": 1339274,
-        "title": "Don't Leave the Kids Alone",
-        "original_title": "No dejes a los niños solos",
-        "description": "A mother moves into a new house with her two children. One night she must leave the siblings home alone. What begins as a blast of carefree play soon turns into a claustrophobic horror story.",
-        "release_date": "2026-05-14",
-        "rating": 6.788,
-        "poster_path": "\/7kaglo9sblVsQrKsUqaVxrfc6ag.jpg",
-        "backdrop_path": "\/flo7Xmyxz2wDUjr5Ff0VrxaVwlY.jpg",
-        "genre_ids": [
-            27,
-            18,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1339713,
-        "title": "Obsession",
-        "original_title": "Obsession",
-        "description": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-        "release_date": "2026-05-13",
-        "rating": 8.175,
-        "poster_path": "\/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-        "backdrop_path": "\/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
-        "genre_ids": [
-            27,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 460458,
-        "title": "Resident Evil: Welcome to Raccoon City",
-        "original_title": "Resident Evil: Welcome to Raccoon City",
-        "description": "Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The company’s exodus left the city a wasteland…with great evil brewing below the surface. When that evil is unleashed, the townspeople are forever…changed…and a small group of survivors must work together to uncover the truth behind Umbrella and make it through the night.",
-        "release_date": "2021-11-24",
-        "rating": 5.947,
-        "poster_path": "\/bArhvjRHl535XMaSh9VjInF2mSZ.jpg",
-        "backdrop_path": "\/wYtEvBmpBRXPdwGgr1gcWiwJSI7.jpg",
-        "genre_ids": [
-            28,
-            27,
-            878
-        ]
-    },
-    {
-        "tmdb_id": 858035,
-        "title": "Klara and the Sun",
-        "original_title": "Klara and the Sun",
-        "description": "An Artificial Friend named Klara finds a deep bond with a troubled young girl, bringing light and hope to a grieving family through her unwavering devotion and innocent wonder.",
-        "release_date": "2026-10-21",
-        "rating": 8.5,
-        "poster_path": "\/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
-        "backdrop_path": "\/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-        "genre_ids": [
-            878,
-            18
+            16,
+            10751,
+            35,
+            12
         ]
     },
     {
@@ -564,7 +379,7 @@
         "original_title": "The Nightmare Before Christmas",
         "description": "Tired of scaring humans every October 31 with the same old bag of tricks, Jack Skellington, the spindly king of Halloween Town, kidnaps Santa Claus and plans to deliver shrunken heads and other ghoulish gifts to children on Christmas morning. But as Christmas approaches, Jack's rag-doll girlfriend, Sally, tries to foil his misguided plans.",
         "release_date": "1993-10-09",
-        "rating": 7.852,
+        "rating": 7.853,
         "poster_path": "\/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
         "backdrop_path": "\/dSfrsjhqC6lYe7LYDYnzWeXZmEl.jpg",
         "genre_ids": [
@@ -574,17 +389,103 @@
         ]
     },
     {
-        "tmdb_id": 755898,
-        "title": "War of the Worlds",
-        "original_title": "War of the Worlds",
-        "description": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
-        "release_date": "2025-07-29",
-        "rating": 4.053,
-        "poster_path": "\/yvirUYrva23IudARHn3mMGVxWqM.jpg",
-        "backdrop_path": "\/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+        "tmdb_id": 1281331,
+        "title": "The Social Reckoning",
+        "original_title": "The Social Reckoning",
+        "description": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+        "release_date": "2026-10-07",
+        "rating": 7,
+        "poster_path": "\/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
+        "backdrop_path": "\/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
+        "genre_ids": [
+            18,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1503762,
+        "title": "Sense and Sensibility",
+        "original_title": "Sense and Sensibility",
+        "description": "A charming, witty, and deeply relatable story of love and sisterhood.",
+        "release_date": "2026-09-23",
+        "rating": 7.188,
+        "poster_path": "\/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+        "backdrop_path": "\/nrLVr8C2pkbOGwXKay2xrxvlHmh.jpg",
+        "genre_ids": [
+            18,
+            10749
+        ]
+    },
+    {
+        "tmdb_id": 1275779,
+        "title": "Disclosure Day",
+        "original_title": "Disclosure Day",
+        "description": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+        "release_date": "2026-06-10",
+        "rating": 7.435,
+        "poster_path": "\/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+        "backdrop_path": "\/1e0KDRYKRPHiVNj8yQKYuU2jVyQ.jpg",
         "genre_ids": [
             878,
             53
+        ]
+    },
+    {
+        "tmdb_id": 1339713,
+        "title": "Obsession",
+        "original_title": "Obsession",
+        "description": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+        "release_date": "2026-05-13",
+        "rating": 8.17,
+        "poster_path": "\/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+        "backdrop_path": "\/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+        "genre_ids": [
+            27,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1108427,
+        "title": "Moana",
+        "original_title": "Moana",
+        "description": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+        "release_date": "2026-07-08",
+        "rating": 7.494,
+        "poster_path": "\/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
+        "backdrop_path": "\/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+        "genre_ids": [
+            10751,
+            14,
+            35,
+            12
+        ]
+    },
+    {
+        "tmdb_id": 1284186,
+        "title": "Sacrifice",
+        "original_title": "Sacrifice",
+        "description": "During a star-studded charity gala brimming with celebrities, billionaires, and empty speeches, a movie star in the midst of an existential crisis is taken hostage by a radical warrior and her devoted followers. As the night descends into chaos, both an inward journey and an outward adventure ensue, where the line between performance and belief, salvation and sacrifice, begins to blur.",
+        "release_date": "2026-04-09",
+        "rating": 5.1,
+        "poster_path": "\/SGH7mlgfDyGgRCi2At62Ljg3zV.jpg",
+        "backdrop_path": "\/oAUf1pvGlafCZVlEuPt1JyONHR1.jpg",
+        "genre_ids": [
+            12,
+            35,
+            28
+        ]
+    },
+    {
+        "tmdb_id": 1780005,
+        "title": "Surviving Hurricane Otis",
+        "original_title": "Contra el huracán",
+        "description": "Two estranged brothers struggle to survive Hurricane Otis in Acapulco, where their bond and courage turn adversity into hope.",
+        "release_date": "2026-10-23",
+        "rating": 5.7,
+        "poster_path": "\/chZa8Jd9kSDj11bekGjwwotFPEw.jpg",
+        "backdrop_path": "\/cpNMIRCrDl0sxDL1tHBzfWi0UZC.jpg",
+        "genre_ids": [
+            18
         ]
     },
     {
@@ -593,7 +494,7 @@
         "original_title": "Mutiny",
         "description": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
         "release_date": "2026-08-19",
-        "rating": 7.612,
+        "rating": 7.613,
         "poster_path": "\/pu2VxGlpGwffOx292w18b1tv96j.jpg",
         "backdrop_path": "\/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
         "genre_ids": [
@@ -602,104 +503,36 @@
         ]
     },
     {
-        "tmdb_id": 1381078,
-        "title": "Love of Your Life",
-        "original_title": "Love of Your Life",
-        "description": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
-        "release_date": "2026-10-07",
-        "rating": 6.8,
-        "poster_path": "\/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
-        "backdrop_path": "\/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
+        "tmdb_id": 1187326,
+        "title": "Tad and The Magic Lamp",
+        "original_title": "Tadeo Jones y La Lámpara Maravillosa",
+        "description": "Tadeo, his girlfriend Sara, and his friends Momia, Jeff, and Belzoni embark on an adventure after Tadeo accidentally unleashes an ancient spell.",
+        "release_date": "2026-08-26",
+        "rating": 8.072,
+        "poster_path": "\/AdDxZgNmRYgDuweY8899buyVqlr.jpg",
+        "backdrop_path": "\/zbpimMxf6Ms96v3Zypuv8WltMSO.jpg",
         "genre_ids": [
-            10749,
-            18
+            16,
+            35,
+            10751
         ]
     },
     {
-        "tmdb_id": 299536,
-        "title": "Avengers: Infinity War",
-        "original_title": "Avengers: Infinity War",
-        "description": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-        "release_date": "2018-04-25",
-        "rating": 8.245,
-        "poster_path": "\/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-        "backdrop_path": "\/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+        "tmdb_id": 446893,
+        "title": "Trolls World Tour",
+        "original_title": "Trolls World Tour",
+        "description": "Queen Poppy and Branch make a surprising discovery — there are other Troll worlds beyond their own, and their distinct differences create big clashes between these various tribes. When a mysterious threat puts all of the Trolls across the land in danger, Poppy, Branch, and their band of friends must embark on an epic quest to create harmony among the feuding Trolls to unite them against certain doom.",
+        "release_date": "2020-03-11",
+        "rating": 7.221,
+        "poster_path": "\/7W0G3YECgDAfnuiHG91r8WqgIOe.jpg",
+        "backdrop_path": "\/qsxhnirlp7y4Ae9bd11oYJSX59j.jpg",
         "genre_ids": [
+            10751,
+            16,
+            35,
+            14,
             12,
-            28,
-            878
-        ]
-    },
-    {
-        "tmdb_id": 977942,
-        "title": "The Uprising",
-        "original_title": "The Uprising",
-        "description": "As war and plague devastate 14th-century England, a humble peasant ignites a rebellion, uniting an army of commoners to defy the King’s might in a desperate fight for justice and survival.",
-        "release_date": "2026-09-10",
-        "rating": 7.949,
-        "poster_path": "\/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-        "backdrop_path": "\/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
-        "genre_ids": [
-            28,
-            18,
-            36
-        ]
-    },
-    {
-        "tmdb_id": 1476746,
-        "title": "The Florist",
-        "original_title": "The Florist",
-        "description": "A quiet horticulturalist harboring a secret life as a lethal assassin finds his true identity jeopardized when he forms an unlikely friendship with a witnesses to police corruption.",
-        "release_date": "2026-09-24",
-        "rating": 5.9,
-        "poster_path": "\/4tnRvIiWMzVA2Tw9c7INLo4sfo0.jpg",
-        "backdrop_path": "\/jpH1VRw74w0vvPTY0ryKEtMIXc.jpg",
-        "genre_ids": [
-            28,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 45722,
-        "title": "Don't Look Down",
-        "original_title": "No mires para abajo",
-        "description": "A sexy Spanish siren named Elvira schools a young man in tantric lovemaking.",
-        "release_date": "2008-10-18",
-        "rating": 5.7,
-        "poster_path": "\/s7igxMxtKQKHdnDxnSAJej7RTGp.jpg",
-        "backdrop_path": "\/wH2RtKsUjGc3ycRvxqOSbzov0av.jpg",
-        "genre_ids": [
-            18,
-            10749
-        ]
-    },
-    {
-        "tmdb_id": 1263337,
-        "title": "Heart of the Beast",
-        "original_title": "Heart of the Beast",
-        "description": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
-        "release_date": "2026-09-19",
-        "rating": 7.4,
-        "poster_path": "\/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-        "backdrop_path": "\/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-        "genre_ids": [
-            12,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 1284046,
-        "title": "Onslaught",
-        "original_title": "Onslaught",
-        "description": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
-        "release_date": "2026-09-02",
-        "rating": 5.7,
-        "poster_path": "\/cOGtvhc6Ij9KvzM6jZsfQyg0B0O.jpg",
-        "backdrop_path": "\/clePZhqOSzNyjfuFBpOrziLEFzb.jpg",
-        "genre_ids": [
-            28,
-            27,
-            53
+            10402
         ]
     },
     {
@@ -708,7 +541,7 @@
         "original_title": "Minions & Monsters",
         "description": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
         "release_date": "2026-06-24",
-        "rating": 7.569,
+        "rating": 7.568,
         "poster_path": "\/4LwvU9SZc8QQzW1X1FAPhNbXnEU.jpg",
         "backdrop_path": "\/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
         "genre_ids": [
@@ -720,151 +553,44 @@
         ]
     },
     {
-        "tmdb_id": 1108427,
-        "title": "Moana",
-        "original_title": "Moana",
-        "description": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-        "release_date": "2026-07-08",
-        "rating": 7.5,
-        "poster_path": "\/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
-        "backdrop_path": "\/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+        "tmdb_id": 1375161,
+        "title": "Don't Move",
+        "original_title": "Don't Move",
+        "description": "Follows a prehistoric arachnid that terrifies a stranded group of campers who hike into the wrong woods. Based on the spine-tingling horror novel from the actor best known as \"Murr\" on TV's Impractical Jokers.",
+        "release_date": "2026-09-11",
+        "rating": 5.2,
+        "poster_path": "\/uh0ZSdM8iOQgHwnUlhhanP8Dkl6.jpg",
+        "backdrop_path": "\/1b0wNCRLYT3mGwvHyTEbqOk98Ix.jpg",
         "genre_ids": [
-            10751,
-            14,
-            35,
-            12
-        ]
-    },
-    {
-        "tmdb_id": 83533,
-        "title": "Avatar: Fire and Ash",
-        "original_title": "Avatar: Fire and Ash",
-        "description": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
-        "release_date": "2025-12-17",
-        "rating": 7.647,
-        "poster_path": "\/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
-        "backdrop_path": "\/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
-        "genre_ids": [
-            878,
-            12,
-            14
-        ]
-    },
-    {
-        "tmdb_id": 1381071,
-        "title": "Godzilla Minus Zero",
-        "original_title": "ゴジラ-0.0",
-        "description": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-        "release_date": "2026-11-03",
-        "rating": 0,
-        "poster_path": "\/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-        "backdrop_path": "\/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-        "genre_ids": [
-            878,
             27,
-            28
-        ]
-    },
-    {
-        "tmdb_id": 299534,
-        "title": "Avengers: Endgame",
-        "original_title": "Avengers: Endgame",
-        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
-        "release_date": "2019-04-24",
-        "rating": 8.246,
-        "poster_path": "\/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
-        "backdrop_path": "\/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
-        "genre_ids": [
-            12,
-            878,
-            28
-        ]
-    },
-    {
-        "tmdb_id": 1084242,
-        "title": "Zootopia 2",
-        "original_title": "Zootopia 2",
-        "description": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-        "release_date": "2025-11-26",
-        "rating": 7.668,
-        "poster_path": "\/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
-        "backdrop_path": "\/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
-        "genre_ids": [
-            16,
-            12,
-            35,
-            9648,
-            10751
-        ]
-    },
-    {
-        "tmdb_id": 1198654,
-        "title": "Bad Apples",
-        "original_title": "Bad Apples",
-        "description": "A struggling primary school teacher is forced to take drastic action because of a foul-mouthed, violent student, and uncovers how her community will turn a blind eye to the most outrageous events to preserve harmony and their sense of safety.",
-        "release_date": "2026-09-10",
-        "rating": 6.4,
-        "poster_path": "\/pcPLnxCThCIo9JFQIMFX4kAE5Yz.jpg",
-        "backdrop_path": "\/ch1g1X6TfezRwbmiBiYRpALTQjN.jpg",
-        "genre_ids": [
-            35,
             53
         ]
     },
     {
-        "tmdb_id": 687163,
-        "title": "Project Hail Mary",
-        "original_title": "Project Hail Mary",
-        "description": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-        "release_date": "2026-03-15",
-        "rating": 8.635,
-        "poster_path": "\/iOb2fjXLbpJgyQXe46n1WtGCnaa.jpg",
-        "backdrop_path": "\/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+        "tmdb_id": 1170608,
+        "title": "Dune: Part Three",
+        "original_title": "Dune: Part Three",
+        "description": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
+        "release_date": "2026-12-15",
+        "rating": 0,
+        "poster_path": "\/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
+        "backdrop_path": "\/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
         "genre_ids": [
             878,
             12
         ]
     },
     {
-        "tmdb_id": 1283515,
-        "title": "Verity",
-        "original_title": "Verity",
-        "description": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-        "release_date": "2026-09-30",
-        "rating": 6.395,
-        "poster_path": "\/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
-        "backdrop_path": "\/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+        "tmdb_id": 1476746,
+        "title": "The Florist",
+        "original_title": "The Florist",
+        "description": "A quiet horticulturalist harboring a secret life as a lethal assassin finds his true identity jeopardized when he forms an unlikely friendship with a witnesses to police corruption.",
+        "release_date": "2026-09-24",
+        "rating": 5.732,
+        "poster_path": "\/4tnRvIiWMzVA2Tw9c7INLo4sfo0.jpg",
+        "backdrop_path": "\/jpH1VRw74w0vvPTY0ryKEtMIXc.jpg",
         "genre_ids": [
-            9648,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 44629,
-        "title": "Animal Kingdom",
-        "original_title": "Animal Kingdom",
-        "description": "Joshua “J” is taken in by his extended family after his mother dies of an overdose. The clan, ruled by J’s scheming grandmother, is heavily involved in criminal activities, and J is soon indoctrinated into their way of life. But J is given a chance to take another path when a cop seeks to help him.",
-        "release_date": "2010-06-03",
-        "rating": 6.8,
-        "poster_path": "\/zhj8YPQKuRev5N3KoHacsPnF4mB.jpg",
-        "backdrop_path": "\/dxOv6K3LNbZfQaGDyx7Tp94Koy.jpg",
-        "genre_ids": [
-            80,
-            18
-        ]
-    },
-    {
-        "tmdb_id": 414906,
-        "title": "The Batman",
-        "original_title": "The Batman",
-        "description": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
-        "release_date": "2022-03-01",
-        "rating": 7.674,
-        "poster_path": "\/74xTEgt7R36Fpooo50r9T25onhq.jpg",
-        "backdrop_path": "\/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
-        "genre_ids": [
-            80,
-            9648,
+            28,
             53
         ]
     },
@@ -885,79 +611,78 @@
         ]
     },
     {
-        "tmdb_id": 1083381,
-        "title": "Backrooms",
-        "original_title": "Backrooms",
-        "description": "A strange doorway appears in the basement of a furniture showroom.",
-        "release_date": "2026-05-27",
-        "rating": 7.013,
-        "poster_path": "\/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-        "backdrop_path": "\/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+        "tmdb_id": 755898,
+        "title": "War of the Worlds",
+        "original_title": "War of the Worlds",
+        "description": "Will Radford is a top analyst for Homeland Security who tracks potential threats through a mass surveillance program, until one day an attack by an unknown entity leads him to question whether the government is hiding something from him... and from the rest of the world.",
+        "release_date": "2025-07-29",
+        "rating": 4.042,
+        "poster_path": "\/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+        "backdrop_path": "\/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
         "genre_ids": [
-            27,
-            9648,
-            878
+            878,
+            53
         ]
     },
     {
-        "tmdb_id": 1375646,
-        "title": "Colony",
-        "original_title": "군체",
-        "description": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
-        "release_date": "2026-05-21",
-        "rating": 8.114,
-        "poster_path": "\/smxNv18w3zyrMrBC1G0EAuomnTQ.jpg",
-        "backdrop_path": "\/pGxUbJ1vKuMYeEjKDokFI7DNbSG.jpg",
+        "tmdb_id": 1204680,
+        "title": "Coyote vs. Acme",
+        "original_title": "Coyote vs. Acme",
+        "description": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+        "release_date": "2026-08-20",
+        "rating": 7.476,
+        "poster_path": "\/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
+        "backdrop_path": "\/7GOW6jod9lLurW5utokAatxg7ql.jpg",
         "genre_ids": [
-            27,
-            28,
-            878
-        ]
-    },
-    {
-        "tmdb_id": 1022789,
-        "title": "Inside Out 2",
-        "original_title": "Inside Out 2",
-        "description": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
-        "release_date": "2024-06-11",
-        "rating": 7.539,
-        "poster_path": "\/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
-        "backdrop_path": "\/p5ozvmdgsmbWe0H8Xk7Rc8SCwAB.jpg",
-        "genre_ids": [
-            16,
-            12,
             35,
+            12,
             10751
         ]
     },
     {
-        "tmdb_id": 787747,
-        "title": "Shell",
-        "original_title": "Shell",
-        "description": "Desperate to reclaim her career, once-beloved actress Samantha Lake is drawn into the glamorous world of wellness mogul Zoe Shannon - only to uncover a monstrous truth beneath its flawless surface.",
-        "release_date": "2025-10-01",
-        "rating": 5.029,
-        "poster_path": "\/2XBNS8DxMFP7qOoTOY7cc8OYFwI.jpg",
-        "backdrop_path": "\/yGH7ke2rbeSI4IZx90UzIrMlWLq.jpg",
+        "tmdb_id": 299534,
+        "title": "Avengers: Endgame",
+        "original_title": "Avengers: Endgame",
+        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+        "release_date": "2019-04-24",
+        "rating": 8.247,
+        "poster_path": "\/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
+        "backdrop_path": "\/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+        "genre_ids": [
+            12,
+            878,
+            28
+        ]
+    },
+    {
+        "tmdb_id": 1657630,
+        "title": "The Awakening",
+        "original_title": "El despertar",
+        "description": "An elite military unit on a mission in the South American jungle encounters a deadly supernatural force revealing an ancient presence that continues to claim anyone who dares enter its domain.",
+        "release_date": "2026-10-29",
+        "rating": 7.25,
+        "poster_path": "\/7pUGiRg9Gq1JqmmNSJLLSonOKum.jpg",
+        "backdrop_path": "\/75MLVCmQ4QougShkx3OlUbJbuSK.jpg",
         "genre_ids": [
             27,
-            18,
+            28,
+            10752,
+            14,
             53
         ]
     },
     {
-        "tmdb_id": 1742441,
-        "title": "V\/H\/S\/MIXTAPE",
-        "original_title": "V\/H\/S\/MIXTAPE",
-        "description": "V\/H\/S\/MIXTAPE cranks the volume on horror with a blood-soaked collection of cursed music videos, terrifying performances, and found footage. Press play. Pray it stops.",
-        "release_date": "2026-10-09",
-        "rating": 4.766,
-        "poster_path": "\/uS8yoiA6NfsuYeOTbVfpem8Ib9.jpg",
-        "backdrop_path": "\/mpB4pgtUcc7rCLxvlknzCbAQQEE.jpg",
+        "tmdb_id": 1440050,
+        "title": "The Breadwinner",
+        "original_title": "The Breadwinner",
+        "description": "After his wife Katie lands a once-in-a-lifetime deal on Shark Tank that takes her on a prolonged business trip - lifelong breadwinner Nate Wilcox now has to fend for his family as a first-time stay-at-home dad.",
+        "release_date": "2026-05-29",
+        "rating": 7.063,
+        "poster_path": "\/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
+        "backdrop_path": "\/dgqBcgTzaUiSLvKJPDF9AbdFEMO.jpg",
         "genre_ids": [
-            27,
-            10402,
-            53
+            35,
+            10751
         ]
     },
     {
@@ -966,7 +691,7 @@
         "original_title": "Coraline",
         "description": "Wandering her rambling old house in her boring new town, 11-year-old Coraline discovers a hidden door to a strangely idealized version of her life. In order to stay in the fantasy, she must make a frighteningly real sacrifice.",
         "release_date": "2009-02-05",
-        "rating": 7.945,
+        "rating": 7.946,
         "poster_path": "\/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
         "backdrop_path": "\/hofnlIyF6bePkgQOpcuRWLvzf15.jpg",
         "genre_ids": [
@@ -977,65 +702,121 @@
         ]
     },
     {
-        "tmdb_id": 1465063,
-        "title": "Forgotten Island",
-        "original_title": "Forgotten Island",
-        "description": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
-        "release_date": "2026-09-10",
-        "rating": 7.9,
-        "poster_path": "\/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
-        "backdrop_path": "\/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
+        "tmdb_id": 1263337,
+        "title": "Heart of the Beast",
+        "original_title": "Heart of the Beast",
+        "description": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+        "release_date": "2026-09-19",
+        "rating": 7.349,
+        "poster_path": "\/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+        "backdrop_path": "\/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
         "genre_ids": [
-            16,
             12,
-            14,
-            35,
-            10751
+            53
         ]
     },
     {
-        "tmdb_id": 872585,
-        "title": "Oppenheimer",
-        "original_title": "Oppenheimer",
-        "description": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-        "release_date": "2023-07-19",
-        "rating": 8.023,
-        "poster_path": "\/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-        "backdrop_path": "\/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+        "tmdb_id": 1375646,
+        "title": "Colony",
+        "original_title": "군체",
+        "description": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
+        "release_date": "2026-05-21",
+        "rating": 8.183,
+        "poster_path": "\/enz3WLx5QU1FUyhXZld04QWIc6N.jpg",
+        "backdrop_path": "\/iGViga8sDCET1S6GfwOlAbuhSGQ.jpg",
+        "genre_ids": [
+            27,
+            28,
+            878
+        ]
+    },
+    {
+        "tmdb_id": 1339274,
+        "title": "Don't Leave the Kids Alone",
+        "original_title": "No dejes a los niños solos",
+        "description": "A mother moves into a new house with her two children. One night she must leave the siblings home alone. What begins as a blast of carefree play soon turns into a claustrophobic horror story.",
+        "release_date": "2026-05-14",
+        "rating": 6.845,
+        "poster_path": "\/7kaglo9sblVsQrKsUqaVxrfc6ag.jpg",
+        "backdrop_path": "\/flo7Xmyxz2wDUjr5Ff0VrxaVwlY.jpg",
+        "genre_ids": [
+            27,
+            18,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 460458,
+        "title": "Resident Evil: Welcome to Raccoon City",
+        "original_title": "Resident Evil: Welcome to Raccoon City",
+        "description": "Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The company’s exodus left the city a wasteland…with great evil brewing below the surface. When that evil is unleashed, the townspeople are forever…changed…and a small group of survivors must work together to uncover the truth behind Umbrella and make it through the night.",
+        "release_date": "2021-11-24",
+        "rating": 5.946,
+        "poster_path": "\/bArhvjRHl535XMaSh9VjInF2mSZ.jpg",
+        "backdrop_path": "\/wYtEvBmpBRXPdwGgr1gcWiwJSI7.jpg",
+        "genre_ids": [
+            28,
+            27,
+            878
+        ]
+    },
+    {
+        "tmdb_id": 1284046,
+        "title": "Onslaught",
+        "original_title": "Onslaught",
+        "description": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
+        "release_date": "2026-09-02",
+        "rating": 5.609,
+        "poster_path": "\/eAs7G3yFaULpfwfVdGvPo5HmFJS.jpg",
+        "backdrop_path": "\/pmPXXniQlb4EdYY0gVZO90rf54F.jpg",
+        "genre_ids": [
+            28,
+            27,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1288069,
+        "title": "Tenzing",
+        "original_title": "Tenzing",
+        "description": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
+        "release_date": "2026-10-09",
+        "rating": 8.313,
+        "poster_path": "\/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+        "backdrop_path": "\/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
         "genre_ids": [
             18,
-            36,
-            10752
+            36
         ]
     },
     {
-        "tmdb_id": 980431,
-        "title": "Avatar Aang: The Last Airbender",
-        "original_title": "Avatar Aang: The Last Airbender",
-        "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-        "release_date": "2026-07-24",
-        "rating": 9.052,
-        "poster_path": "\/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-        "backdrop_path": "\/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+        "tmdb_id": 1083381,
+        "title": "Backrooms",
+        "original_title": "Backrooms",
+        "description": "A strange doorway appears in the basement of a furniture showroom.",
+        "release_date": "2026-05-27",
+        "rating": 7.01,
+        "poster_path": "\/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+        "backdrop_path": "\/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
         "genre_ids": [
-            16,
-            12,
-            14,
-            28
+            27,
+            9648,
+            878
         ]
     },
     {
-        "tmdb_id": 671,
-        "title": "Harry Potter and the Philosopher's Stone",
-        "original_title": "Harry Potter and the Philosopher's Stone",
-        "description": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
-        "release_date": "2001-11-16",
-        "rating": 7.905,
-        "poster_path": "\/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
-        "backdrop_path": "\/hziiv14OpD73u9gAak4XDDfBKa2.jpg",
+        "tmdb_id": 299536,
+        "title": "Avengers: Infinity War",
+        "original_title": "Avengers: Infinity War",
+        "description": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+        "release_date": "2018-04-25",
+        "rating": 8.246,
+        "poster_path": "\/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+        "backdrop_path": "\/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
         "genre_ids": [
             12,
-            14
+            28,
+            878
         ]
     },
     {
@@ -1044,28 +825,80 @@
         "original_title": "The Weight",
         "description": "When Samuel is torn from his daughter and sent to a brutal prison, Warden Clancy offers him a high-stakes proposition: smuggle gold out of a remote mine with a dangerous crew of prisoners and he’ll win his freedom.",
         "release_date": "2026-09-16",
-        "rating": 7,
+        "rating": 6.725,
         "poster_path": "\/8i5iZV50CoEtmDCFM7RSxCkpE8h.jpg",
-        "backdrop_path": "\/tD4qifPSyyhPCgZ0W4fNTcVDD2r.jpg",
+        "backdrop_path": "\/4klejBUCWsq2F9GHB5EH5mQdFOg.jpg",
         "genre_ids": [
             18,
-            53,
-            80
+            53
         ]
     },
     {
-        "tmdb_id": 634649,
-        "title": "Spider-Man: No Way Home",
-        "original_title": "Spider-Man: No Way Home",
-        "description": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-        "release_date": "2021-12-15",
-        "rating": 7.947,
-        "poster_path": "\/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-        "backdrop_path": "\/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+        "tmdb_id": 1792914,
+        "title": "Log 15",
+        "original_title": "Log 15",
+        "description": "Driven to save her mother from Alzheimer's, a desperate woman documents her radical experiments to unlock the human mind, only to discover the footage she is recording is actively rewriting her own reality.",
+        "release_date": null,
+        "rating": 0,
+        "poster_path": "\/6MqBwshl0Lu9a5ImgFbdBX7aA69.jpg",
+        "backdrop_path": null,
+        "genre_ids": []
+    },
+    {
+        "tmdb_id": 858035,
+        "title": "Klara and the Sun",
+        "original_title": "Klara and the Sun",
+        "description": "When Klara, an Artificial Friend who wants nothing more than to find the perfect home, meets Josie, each immediately senses a kindred spirit in the other. Josie has a fraught relationship with her mother and they've suffered great loss, but Klara's innocent wonder and unwavering loyalty begin to heal the family and bring light to Josie's complicated world.",
+        "release_date": "2026-10-21",
+        "rating": 5.464,
+        "poster_path": "\/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
+        "backdrop_path": "\/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
         "genre_ids": [
+            878,
+            18
+        ]
+    },
+    {
+        "tmdb_id": 1233413,
+        "title": "Sinners",
+        "original_title": "Sinners",
+        "description": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+        "release_date": "2025-04-16",
+        "rating": 7.514,
+        "poster_path": "\/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+        "backdrop_path": "\/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+        "genre_ids": [
+            27,
             28,
-            12,
-            878
+            53
+        ]
+    },
+    {
+        "tmdb_id": 693134,
+        "title": "Dune: Part Two",
+        "original_title": "Dune: Part Two",
+        "description": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+        "release_date": "2024-02-27",
+        "rating": 8.144,
+        "poster_path": "\/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+        "backdrop_path": "\/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+        "genre_ids": [
+            878,
+            12
+        ]
+    },
+    {
+        "tmdb_id": 1381078,
+        "title": "Love of Your Life",
+        "original_title": "Love of Your Life",
+        "description": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
+        "release_date": "2026-10-07",
+        "rating": 6.8,
+        "poster_path": "\/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
+        "backdrop_path": "\/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
+        "genre_ids": [
+            10749,
+            18
         ]
     },
     {
@@ -1074,7 +907,7 @@
         "original_title": "Interstellar",
         "description": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
         "release_date": "2014-11-04",
-        "rating": 8.491,
+        "rating": 8.492,
         "poster_path": "\/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
         "backdrop_path": "\/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
         "genre_ids": [
@@ -1084,58 +917,43 @@
         ]
     },
     {
-        "tmdb_id": 1280300,
-        "title": "The Whistler",
-        "original_title": "The Whistler",
-        "description": "Reeling from their daughter's loss, Nicole and Sebastian come into possession of a secluded Venezuelan farm, unaware of the dark forces they're about to face.",
-        "release_date": "2026-09-24",
-        "rating": 5.2,
-        "poster_path": "\/sX8tqkFR1aqZaLQ4Jgb8jEMB4RN.jpg",
-        "backdrop_path": "\/qz8m7DGpuhc4RJmCbHsdueQKkTg.jpg",
+        "tmdb_id": 1734379,
+        "title": "A Mind in Chaos",
+        "original_title": "A Mind in Chaos",
+        "description": "After surviving a mass shooting at her office, a former mean exec attends a secluded therapy retreat in the hopes of recovering, but when odd occurrences keep happening, she begins to suspect that something else is lurking in the shadows.",
+        "release_date": "2025-09-12",
+        "rating": 3,
+        "poster_path": "\/avlBHgpxYofl3CQ5ewVa9NbAxWq.jpg",
+        "backdrop_path": "\/A7B3IkqqclUtQhL2ArJfJAS2DJ7.jpg",
         "genre_ids": [
-            9648,
             27,
             53
         ]
     },
     {
-        "tmdb_id": 1482547,
-        "title": "Zip Wire",
-        "original_title": "Zip Wire",
-        "description": "When her ground-breaking pharmaceutical discovery is stolen and partner murdered, researcher Amy must face her fear of heights to escape nefarious attackers, with the only path to salvation being a treacherous aerial runway. To outsmart the mysterious hostiles, she has to summon every ounce of courage to protect the world-changing scientific discovery — and herself — before it's too late.",
-        "release_date": "2026-08-31",
-        "rating": 7.3,
-        "poster_path": "\/cO7J0XSVKPlAjUCMWC7DVBn1Py2.jpg",
-        "backdrop_path": "\/yIwdIsM2Nr6EaiWy23mQqxvmoNh.jpg",
+        "tmdb_id": 83533,
+        "title": "Avatar: Fire and Ash",
+        "original_title": "Avatar: Fire and Ash",
+        "description": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+        "release_date": "2025-12-17",
+        "rating": 7.6,
+        "poster_path": "\/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+        "backdrop_path": "\/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
         "genre_ids": [
-            28,
-            53
-        ]
-    },
-    {
-        "tmdb_id": 10601,
-        "title": "Peter Pan",
-        "original_title": "Peter Pan",
-        "description": "In stifling Edwardian London, Wendy Darling mesmerizes her brothers every night with bedtime tales of swordplay, swashbuckling and the fearsome Captain Hook. But the children become the heroes of an even greater story, when Peter Pan flies into their nursery one night and leads them over moonlit rooftops through a galaxy of stars and to the lush jungles of Neverland.",
-        "release_date": "2003-12-18",
-        "rating": 7.129,
-        "poster_path": "\/6QdU3TZZrIvXFzoHOwafZAynFjB.jpg",
-        "backdrop_path": "\/zyWbOvKCdA9V9P5xuUG2eiPYsUo.jpg",
-        "genre_ids": [
+            878,
             12,
-            14,
-            10751
+            14
         ]
     },
     {
-        "tmdb_id": 122,
-        "title": "The Lord of the Rings: The Return of the King",
-        "original_title": "The Lord of the Rings: The Return of the King",
-        "description": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
-        "release_date": "2003-12-17",
-        "rating": 8.505,
-        "poster_path": "\/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
-        "backdrop_path": "\/ctiw6FZK4N36LmkjSklWEbuvlq9.jpg",
+        "tmdb_id": 120,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+        "description": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "release_date": "2001-12-18",
+        "rating": 8.448,
+        "poster_path": "\/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "backdrop_path": "\/oiwc338EoBgS4sEI2ixAny4KQKg.jpg",
         "genre_ids": [
             12,
             14,
@@ -1157,14 +975,70 @@
         ]
     },
     {
-        "tmdb_id": 502356,
-        "title": "The Super Mario Bros. Movie",
-        "original_title": "The Super Mario Bros. Movie",
-        "description": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
-        "release_date": "2023-04-05",
-        "rating": 7.587,
-        "poster_path": "\/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
-        "backdrop_path": "\/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+        "tmdb_id": 1389172,
+        "title": "Reporting Live",
+        "original_title": "रिपोर्टिंग लाइव",
+        "description": "A young reporter and her reluctant cameraman chase a story, only to get entangled in an illegal sand-mining racket run by a ruthless syndicate.",
+        "release_date": "2026-10-09",
+        "rating": 7,
+        "poster_path": "\/xVabS4lTi6IMscr2FOucxydE6ZD.jpg",
+        "backdrop_path": "\/faJB8DXU0LXwq5ebMLj5drz8S4N.jpg",
+        "genre_ids": [
+            80,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1422041,
+        "title": "LA BOLA NEGRA",
+        "original_title": "La bola negra",
+        "description": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
+        "release_date": "2026-09-25",
+        "rating": 8.1,
+        "poster_path": "\/t1azKLExwUxKj6v6m2L535evuRa.jpg",
+        "backdrop_path": "\/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
+        "genre_ids": [
+            18,
+            10752
+        ]
+    },
+    {
+        "tmdb_id": 1283515,
+        "title": "Verity",
+        "original_title": "Verity",
+        "description": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+        "release_date": "2026-09-30",
+        "rating": 6.362,
+        "poster_path": "\/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
+        "backdrop_path": "\/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+        "genre_ids": [
+            9648,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 1234139,
+        "title": "Jailer 2",
+        "original_title": "ஜெயிலர் 2",
+        "description": "When a dangerous syndicate expands its reach to threaten his family's peace, retired jailer Tiger Muthuvel Pandian goes undercover as a driver. Operating from the shadows, he takes on ruthless new enemies to protect his home.",
+        "release_date": "2026-10-14",
+        "rating": 8,
+        "poster_path": "\/upwdEyhhYZ7pT2hD535fr2MGfpx.jpg",
+        "backdrop_path": "\/zpHTOdRl7GEPqFsDGqsN6Hi9Ylt.jpg",
+        "genre_ids": [
+            28,
+            35
+        ]
+    },
+    {
+        "tmdb_id": 1226863,
+        "title": "The Super Mario Galaxy Movie",
+        "original_title": "The Super Mario Galaxy Movie",
+        "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+        "release_date": "2026-04-01",
+        "rating": 8.2,
+        "poster_path": "\/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+        "backdrop_path": "\/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
         "genre_ids": [
             10751,
             35,
@@ -1174,72 +1048,60 @@
         ]
     },
     {
-        "tmdb_id": 911430,
-        "title": "F1",
-        "original_title": "F1",
-        "description": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
-        "release_date": "2025-06-25",
-        "rating": 7.828,
-        "poster_path": "\/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
-        "backdrop_path": "\/lkDYN0whyE82mcM20rwtwjbniKF.jpg",
+        "tmdb_id": 1465063,
+        "title": "Forgotten Island",
+        "original_title": "Forgotten Island",
+        "description": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
+        "release_date": "2026-09-10",
+        "rating": 7.661,
+        "poster_path": "\/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+        "backdrop_path": "\/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
         "genre_ids": [
-            28,
-            18
-        ]
-    },
-    {
-        "tmdb_id": 1470424,
-        "title": "Virtual Assistant",
-        "original_title": "Голосовой помощник",
-        "description": "A group of former classmates rent a country house to relax like in the good old days. The modern chalet has everything for a comfortable and fun vacation, including the smart speaker \"Alyona\". \"Alyona\" knows how to entertain her guests, she has many \"skills\". She can solve puzzles, manage the house, and she also knows all the \"skeletons in the closet\" that friends are hiding. The device invites the company to play the game \"Find the Killer\" and find out the circumstances of the death of their best friend, who died less than a year ago under strange circumstances.",
-        "release_date": "2025-11-06",
-        "rating": 7.203,
-        "poster_path": "\/x3J1bIGoN8ES7aWeGHlLTgIg5C3.jpg",
-        "backdrop_path": "\/1W58j6ZOt1saJU4LsNOqpDdhVBW.jpg",
-        "genre_ids": [
-            53,
-            9648,
-            27
-        ]
-    },
-    {
-        "tmdb_id": 3933,
-        "title": "Corpse Bride",
-        "original_title": "Corpse Bride",
-        "description": "In a 19th-century European village, a young man about to be married is whisked away to the underworld and wed to a mysterious corpse bride, while his real bride waits bereft in the land of the living.",
-        "release_date": "2005-09-12",
-        "rating": 7.595,
-        "poster_path": "\/3RAoVTxUk1OzZClscAsynuu670p.jpg",
-        "backdrop_path": "\/v23fWgJUEt8EMmvn19btIacxP8E.jpg",
-        "genre_ids": [
-            10749,
+            16,
+            12,
             14,
-            16
+            35,
+            10751
         ]
     },
     {
-        "tmdb_id": 843352,
-        "title": "Legend of the White Dragon",
-        "original_title": "Legend of the White Dragon",
-        "description": "Forced to hide in the shadows, fugitive hero Erik Reed must clear his name to reunite with his family. Standing in his way is a mysterious villain obsessed with destroying the White Dragon for good.",
-        "release_date": "2026-08-28",
-        "rating": 6.8,
-        "poster_path": "\/k0L5ZQP4PjdNziVGvcOeaihXyCc.jpg",
-        "backdrop_path": "\/iBfpVJCn2nKSkuWjv1Wp4GTiqoG.jpg",
+        "tmdb_id": 27205,
+        "title": "Inception",
+        "original_title": "Inception",
+        "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+        "release_date": "2010-07-15",
+        "rating": 8.373,
+        "poster_path": "\/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "backdrop_path": "\/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
         "genre_ids": [
             28,
-            14
+            878,
+            80
         ]
     },
     {
-        "tmdb_id": 1228710,
-        "title": "The Mandalorian and Grogu",
-        "original_title": "The Mandalorian and Grogu",
-        "description": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-        "release_date": "2026-05-20",
-        "rating": 7.458,
-        "poster_path": "\/uwMKWjcNID0D9jjplsjkQS2OrB4.jpg",
-        "backdrop_path": "\/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
+        "tmdb_id": 1198654,
+        "title": "Bad Apples",
+        "original_title": "Bad Apples",
+        "description": "A struggling primary school teacher is forced to take drastic action because of a foul-mouthed, violent student, and uncovers how her community will turn a blind eye to the most outrageous events to preserve harmony and their sense of safety.",
+        "release_date": "2026-09-10",
+        "rating": 6.8,
+        "poster_path": "\/pcPLnxCThCIo9JFQIMFX4kAE5Yz.jpg",
+        "backdrop_path": "\/dNCK3daKbOi6IHSsM9O2Nwyd91Y.jpg",
+        "genre_ids": [
+            35,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 634649,
+        "title": "Spider-Man: No Way Home",
+        "original_title": "Spider-Man: No Way Home",
+        "description": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+        "release_date": "2021-12-15",
+        "rating": 7.947,
+        "poster_path": "\/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+        "backdrop_path": "\/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
         "genre_ids": [
             28,
             12,
@@ -1247,48 +1109,17 @@
         ]
     },
     {
-        "tmdb_id": 335984,
-        "title": "Blade Runner 2049",
-        "original_title": "Blade Runner 2049",
-        "description": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
-        "release_date": "2017-10-04",
-        "rating": 7.6,
-        "poster_path": "\/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
-        "backdrop_path": "\/gNdLJU9TxrpGx4dkZidjys3fyy0.jpg",
+        "tmdb_id": 1453407,
+        "title": "Gajab Raat",
+        "original_title": "ग़ज़ब रात",
+        "description": "A corrupt, troubled cop's night spirals out of control when a reluctant act of mercy toward an injured girl pulls him into a deadly web of crime.",
+        "release_date": "2026-10-23",
+        "rating": 5.9,
+        "poster_path": "\/cEPqJ2HboM9KBj4CtVJFeCFojae.jpg",
+        "backdrop_path": "\/8I4YFWgi9IZW4VUi398A0BqLnm.jpg",
         "genre_ids": [
-            878,
-            18
-        ]
-    },
-    {
-        "tmdb_id": 150540,
-        "title": "Inside Out",
-        "original_title": "Inside Out",
-        "description": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through unfamiliar places to get back home.",
-        "release_date": "2015-06-17",
-        "rating": 7.906,
-        "poster_path": "\/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
-        "backdrop_path": "\/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg",
-        "genre_ids": [
-            16,
-            10751,
-            12,
-            18,
-            35
-        ]
-    },
-    {
-        "tmdb_id": 1375441,
-        "title": "Primetime",
-        "original_title": "Primetime",
-        "description": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
-        "release_date": "2026-09-23",
-        "rating": 6.83,
-        "poster_path": "\/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
-        "backdrop_path": "\/1tJz8e1G21nEuzHlX771MNBRJvM.jpg",
-        "genre_ids": [
-            18,
-            53
+            53,
+            80
         ]
     },
     {
@@ -1297,7 +1128,7 @@
         "original_title": "Deadpool & Wolverine",
         "description": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
         "release_date": "2024-07-24",
-        "rating": 7.588,
+        "rating": 7.59,
         "poster_path": "\/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
         "backdrop_path": "\/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
         "genre_ids": [
@@ -1307,33 +1138,313 @@
         ]
     },
     {
-        "tmdb_id": 1751701,
-        "title": "After Impact",
-        "original_title": "After Impact",
-        "description": "After losing his father, Ethan Nichols inherits one of the largest greenhouses in the country, just as the world faces a devastating threat from an approaching asteroid. As society begins to unravel, Ethan grapples with personal betrayal, overwhelming loneliness, and the growing fear that survival may come at the cost of his humanity. Seeking refuge in his family’s bunker, Ethan endures the harsh aftermath of the impact, wrestling with physical injury and emotional despair. When a faint voice crackles over his radio, Ethan discovers he's not as alone as he believed.",
-        "release_date": "2026-09-15",
-        "rating": 5.638,
-        "poster_path": "\/yzDuAQCY2n6zzOlBkn6JzhLhY3k.jpg",
-        "backdrop_path": "\/k22XyPbce7zvzzf5OnT4uaY8ZD1.jpg",
+        "tmdb_id": 278,
+        "title": "The Shawshank Redemption",
+        "original_title": "The Shawshank Redemption",
+        "description": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "release_date": "1994-09-23",
+        "rating": 8.734,
+        "poster_path": "\/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+        "backdrop_path": "\/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
         "genre_ids": [
-            878,
+            18,
+            80
+        ]
+    },
+    {
+        "tmdb_id": 155,
+        "title": "The Dark Knight",
+        "original_title": "The Dark Knight",
+        "description": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "release_date": "2008-07-16",
+        "rating": 8.538,
+        "poster_path": "\/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "backdrop_path": "\/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+        "genre_ids": [
+            28,
+            53,
+            80
+        ]
+    },
+    {
+        "tmdb_id": 1368166,
+        "title": "The Housemaid",
+        "original_title": "The Housemaid",
+        "description": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+        "release_date": "2025-12-18",
+        "rating": 7.252,
+        "poster_path": "\/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+        "backdrop_path": "\/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+        "genre_ids": [
+            9648,
+            53
+        ]
+    },
+    {
+        "tmdb_id": 980431,
+        "title": "Avatar Aang: The Last Airbender",
+        "original_title": "Avatar Aang: The Last Airbender",
+        "description": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+        "release_date": "2026-07-24",
+        "rating": 9.038,
+        "poster_path": "\/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+        "backdrop_path": "\/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+        "genre_ids": [
+            16,
+            12,
+            14,
+            28
+        ]
+    },
+    {
+        "tmdb_id": 1375441,
+        "title": "Primetime",
+        "original_title": "Primetime",
+        "description": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+        "release_date": "2026-09-23",
+        "rating": 6.857,
+        "poster_path": "\/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+        "backdrop_path": "\/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
+        "genre_ids": [
             18,
             53
         ]
     },
     {
-        "tmdb_id": 866398,
-        "title": "The Beekeeper",
-        "original_title": "The Beekeeper",
-        "description": "One man's campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
-        "release_date": "2024-01-08",
-        "rating": 7.287,
-        "poster_path": "\/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
-        "backdrop_path": "\/f0ACHVpV707zqu4etZrXnWNdSgL.jpg",
+        "tmdb_id": 1084242,
+        "title": "Zootopia 2",
+        "original_title": "Zootopia 2",
+        "description": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+        "release_date": "2025-11-26",
+        "rating": 7.667,
+        "poster_path": "\/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+        "backdrop_path": "\/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+        "genre_ids": [
+            16,
+            12,
+            35,
+            9648,
+            10751
+        ]
+    },
+    {
+        "tmdb_id": 872585,
+        "title": "Oppenheimer",
+        "original_title": "Oppenheimer",
+        "description": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+        "release_date": "2023-07-19",
+        "rating": 8.023,
+        "poster_path": "\/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "backdrop_path": "\/neeNHeXjMF5fXoCJRsOmkNGC7q.jpg",
+        "genre_ids": [
+            18,
+            36,
+            10752
+        ]
+    },
+    {
+        "tmdb_id": 911430,
+        "title": "F1",
+        "original_title": "F1",
+        "description": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+        "release_date": "2025-06-25",
+        "rating": 7.831,
+        "poster_path": "\/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
+        "backdrop_path": "\/lkDYN0whyE82mcM20rwtwjbniKF.jpg",
         "genre_ids": [
             28,
+            18
+        ]
+    },
+    {
+        "tmdb_id": 1380417,
+        "title": "By Any Means",
+        "original_title": "By Any Means",
+        "description": "In 1960s Mississippi, a young Black FBI agent is forced to partner with a notorious mafia hitman to investigate a wave of brutal civil rights murders.",
+        "release_date": "2026-09-02",
+        "rating": 6.513,
+        "poster_path": "\/85CvGoeXAcSSWy6So2DRD8ItJAN.jpg",
+        "backdrop_path": "\/1jANqIbqrWJZb8GM5Kb3L6U8iHi.jpg",
+        "genre_ids": [
+            53,
+            36,
             80,
-            53
+            18
+        ]
+    },
+    {
+        "tmdb_id": 597,
+        "title": "Titanic",
+        "original_title": "Titanic",
+        "description": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+        "release_date": "1997-12-18",
+        "rating": 7.901,
+        "poster_path": "\/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+        "backdrop_path": "\/sCzcYW9h55WcesOqA12cgEr9Exw.jpg",
+        "genre_ids": [
+            18,
+            10749
+        ]
+    },
+    {
+        "tmdb_id": 671,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "original_title": "Harry Potter and the Philosopher's Stone",
+        "description": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+        "release_date": "2001-11-16",
+        "rating": 7.905,
+        "poster_path": "\/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+        "backdrop_path": "\/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
+        "genre_ids": [
+            12,
+            14
+        ]
+    },
+    {
+        "tmdb_id": 122917,
+        "title": "The Hobbit: The Battle of the Five Armies",
+        "original_title": "The Hobbit: The Battle of the Five Armies",
+        "description": "Following Smaug's attack on Laketown, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
+        "release_date": "2014-12-10",
+        "rating": 7.34,
+        "poster_path": "\/xT98tLqatZPQApyRmlPL12LtiWp.jpg",
+        "backdrop_path": "\/3UbaCMmqOd7mca4Y5DOzY2ZVTyX.jpg",
+        "genre_ids": [
+            28,
+            12,
+            14
+        ]
+    },
+    {
+        "tmdb_id": 977942,
+        "title": "The Uprising",
+        "original_title": "The Uprising",
+        "description": "As war and plague devastate 14th-century England, a humble peasant ignites a rebellion, uniting an army of commoners to defy the King’s might in a desperate fight for justice and survival.",
+        "release_date": "2026-09-10",
+        "rating": 7.905,
+        "poster_path": "\/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+        "backdrop_path": "\/kAlAFblqBI6aGXItR4DRpT5Tozg.jpg",
+        "genre_ids": [
+            28,
+            18,
+            36
+        ]
+    },
+    {
+        "tmdb_id": 557,
+        "title": "Spider-Man",
+        "original_title": "Spider-Man",
+        "description": "After being bitten by a genetically altered spider at Oscorp, nerdy but endearing high school student Peter Parker is endowed with amazing powers to become the superhero known as Spider-Man.",
+        "release_date": "2002-05-01",
+        "rating": 7.36,
+        "poster_path": "\/or6XJBVpcEbIkma0V9zshnbEtx4.jpg",
+        "backdrop_path": "\/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
+        "genre_ids": [
+            28,
+            878
+        ]
+    },
+    {
+        "tmdb_id": 3933,
+        "title": "Corpse Bride",
+        "original_title": "Corpse Bride",
+        "description": "In a 19th-century European village, a young man about to be married is whisked away to the underworld and wed to a mysterious corpse bride, while his real bride waits bereft in the land of the living.",
+        "release_date": "2005-09-12",
+        "rating": 7.6,
+        "poster_path": "\/3RAoVTxUk1OzZClscAsynuu670p.jpg",
+        "backdrop_path": "\/v23fWgJUEt8EMmvn19btIacxP8E.jpg",
+        "genre_ids": [
+            10749,
+            14,
+            16
+        ]
+    },
+    {
+        "tmdb_id": 129,
+        "title": "Spirited Away",
+        "original_title": "千と千尋の神隠し",
+        "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+        "release_date": "2001-07-20",
+        "rating": 8.536,
+        "poster_path": "\/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+        "backdrop_path": "\/m4TUa2ciEWSlk37rOsjiSIvZDXE.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            14
+        ]
+    },
+    {
+        "tmdb_id": 122,
+        "title": "The Lord of the Rings: The Return of the King",
+        "original_title": "The Lord of the Rings: The Return of the King",
+        "description": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+        "release_date": "2003-12-17",
+        "rating": 8.505,
+        "poster_path": "\/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "backdrop_path": "\/ctiw6FZK4N36LmkjSklWEbuvlq9.jpg",
+        "genre_ids": [
+            12,
+            14,
+            28
+        ]
+    },
+    {
+        "tmdb_id": 603,
+        "title": "The Matrix",
+        "original_title": "The Matrix",
+        "description": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+        "release_date": "1999-03-31",
+        "rating": 8.261,
+        "poster_path": "\/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+        "backdrop_path": "\/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+        "genre_ids": [
+            28,
+            878
+        ]
+    },
+    {
+        "tmdb_id": 1327819,
+        "title": "Hoppers",
+        "original_title": "Hoppers",
+        "description": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+        "release_date": "2026-03-04",
+        "rating": 8.128,
+        "poster_path": "\/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+        "backdrop_path": "\/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+        "genre_ids": [
+            16,
+            12,
+            35,
+            10751,
+            878
+        ]
+    },
+    {
+        "tmdb_id": 154200,
+        "title": "The Blue Room",
+        "original_title": "La habitación azul",
+        "description": "A couple meet each other often in a motel room.",
+        "release_date": "2002-05-04",
+        "rating": 6.595,
+        "poster_path": "\/hV9T358eS17C4m4ORPrl8VqyHwf.jpg",
+        "backdrop_path": "\/lYYwo8dDsHBnEvzStf3gcdWj2bJ.jpg",
+        "genre_ids": [
+            18,
+            10749
+        ]
+    },
+    {
+        "tmdb_id": 4488,
+        "title": "Friday the 13th",
+        "original_title": "Friday the 13th",
+        "description": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
+        "release_date": "1980-05-09",
+        "rating": 6.403,
+        "poster_path": "\/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "backdrop_path": "\/edVRp9npNwQwJtD05KyZlzp1J2p.jpg",
+        "genre_ids": [
+            27
         ]
     }
 ]

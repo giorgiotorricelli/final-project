@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('movies', function (Blueprint $table) {
-            $table->unsignedBigInteger('tmdb_id')->unique();
+            $table->unsignedBigInteger('tmdb_id')->nullable()->unique();
         });
     }
 

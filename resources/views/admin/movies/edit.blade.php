@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('admin.movies.update', $movie->slug) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.movies.update', $movie) }}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT') <!-- Inserisco il metodo put per la edit -->
         <div class="mb-3">
@@ -51,8 +51,8 @@
                     <img src="{{ Storage::url($movie->poster_path) }}" alt="vertical-poster" class="edit-vertical-poster-img">
                 </div>
                 <div class="align-self-end">
-                        <label for="hasPosterCheck" class="form-label mb-0">No Vertical Poster</label>
-                        <input class="d-inline" type="checkbox" name="hasPosterCheck" id="hasPosterCheck">
+                        <label for="noPosterCheck" class="form-label mb-0">No Vertical Poster</label>
+                        <input class="d-inline" type="checkbox" name="noPosterCheck" id="noPosterCheck">
                     </div>
             </div>
             @error('poster_path')
@@ -73,8 +73,8 @@
                     <img src="{{ Storage::url($movie->backdrop_path) }}" alt="horizontal-poster" class="edit-horizontal-poster-img">
                 </div>
                 <div class=" align-self-end">
-                    <label for="hasBackdropCheck" class="form-label mb-0">No Horizontal Poster</label>
-                    <input class="d-inline" type="checkbox" name="hasBackdropCheck" id="hasBackdropCheck">
+                    <label for="noBackdropCheck" class="form-label mb-0">No Horizontal Poster</label>
+                    <input class="d-inline" type="checkbox" name="noBackdropCheck" id="noBackdropCheck">
                 </div>
             </div>
             

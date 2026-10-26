@@ -12,9 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('movies', function (Blueprint $table) {
-            $table->decimal('rating')->nullable()->after('duration');
+            $table->decimal('rating')->nullable()->after('release_date');
             $table->unsignedBigInteger('tmdb_id')->after('id')->change();
-            $table->string('backdrop_path')->nullable();
         });
     }
 
@@ -26,7 +25,6 @@ return new class extends Migration
         Schema::table('movies', function (Blueprint $table) {
             $table->dropColumn('rating');
             $table->unsignedBigInteger('tmdb_id')->after('updated_at')->change();
-            $table->dropColumn('backdrop_path');
         });
     }
 };
