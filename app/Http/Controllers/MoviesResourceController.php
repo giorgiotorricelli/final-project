@@ -188,8 +188,9 @@ class MoviesResourceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Movie $movie)
+    public function destroy(string $slug)
     {
+        $movie = Movie::where('slug', $slug)->firstOrFail();
         $movie->delete();
         return redirect()->route('admin.movies.index');
     }

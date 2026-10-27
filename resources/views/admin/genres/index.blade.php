@@ -50,14 +50,44 @@
                     <button type="button" class="genres-btn-edit btn btn-sm bi bi-pencil" 
                     name="title{{ Str::camel($genre->name) }}" onclick="handleUpdateVisibility(event)"></button>
 
-                    <!-- Delete :) -->
-                    <button type="button" class="genres-btn-delete btn btn-sm bi bi-trash"></button>
+                    <!-- Delete :) --><!-- button trigger deletion modal -->
+                    <button type="button" class="genres-btn-delete btn btn-sm bi bi-trash" 
+                    data-bs-toggle="modal" data-bs-target="#deleteModal" data-genre-id="{{ $genre->id }}"
+                    onclick="setDestroyDestination(event)"></button>
+                    
                 </div>
             </li>
                 
         @endforeach
     </ul>
 </div>
+<!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteModalLabel">Deleting</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You are about to delete this genre, are you sure?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- Inserisco l'action tramite script -->
+                <form id="modalDeletionForm" action="" method="post">
+                    @csrf
+                    @method('DELETE')
+
+                    <button class="btn btn-info" type="submit">
+                        Confirm
+                    </button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
 <script>
     const createErrorSpan = document.getElementById('create-error-span');
     
@@ -88,6 +118,14 @@
 
     function handleErrorVisibility() {
         document.querySelector('.error-edit-genre-span').classList.add('d-none');
+    }
+
+    function setDestroyDestination(event) {
+        const destination = event.target.getAttribute('data-genre-id');
+        // prendo il form dentro il modale
+        const deletionForm = document.getElementById('modalDeletionForm');
+        deletionForm.action = `/admin/genres/${destination}`;
+        
     }
 </script>
     

@@ -86,7 +86,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <form action="{{ route('admin.movies.destroy', $movie) }}" method="post">
+                <!-- Inserisco l'action personalizzata tramite script -->
+                <form id="modalDeletionForm" action="" method="post">
                     @csrf
                     @method('DELETE')
 
@@ -160,6 +161,14 @@
 
         }
 
+        function setDestroyDestination(event) {
+            const destination = event.target.getAttribute('data-movie-slug');
+            // prendo il form dentro il modale
+            const deletionForm = document.getElementById('modalDeletionForm');
+            deletionForm.action = `/admin/movies/${destination}`;
+            
+        }
+
         function renderMovies() {
             
             tbody.innerHTML = ``; // svuoto tbody
@@ -175,8 +184,9 @@
                                     <!-- button trigger edit page -->
                                     <a href="http://localhost:8000/admin/movies/${movie.slug}/edit" class="btn btn-success"><i class=" bi bi-pencil-square"></i></a>
                                     <!-- button trigger deletion modal -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                        <i class=" bi bi-trash"></i>
+                                    <button type="button" class="btn btn-primary bi bi-trash" 
+                                    data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                    data-movie-slug="${movie.slug}" onclick="setDestroyDestination(event)">
                                     </button>
                                 </div>
                                 
