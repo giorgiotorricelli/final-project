@@ -62,7 +62,7 @@
 /*movie card*/
 
 .movie-link {
-    text-decoration: none; 
+    text-decoration: none;
     color: white;
 }
 
@@ -106,7 +106,8 @@
 /*show*/
 
 .backdrop-wrapper {
-    position: relative; /* Necessario per posizionare il contenuto sopra il livello di sfondo */
+    position: relative;
+    /* Necessario per posizionare il contenuto sopra il livello di sfondo */
     height: calc(100vh - var(--admin-header-height));
     overflow: hidden;
     background-color: #000;
@@ -120,17 +121,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover; 
-    background-position: top; 
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
-    background-image: var(--bg-image); /* Passiamo l'immagine tramite variabile CSS o inline */
+    background-image: var(--bg-image);
+    /* Passiamo l'immagine tramite variabile CSS o inline */
     opacity: 0.6;
-    z-index: 1; /* Lo mettiamo dietro */
+    z-index: 1;
+    /* Lo mettiamo dietro */
 }
 
 .show-container {
     position: relative;
-    z-index: 2; /* Assicura che i contenuti stiano sopra lo sfondo opacizzato */
+    z-index: 2;
+    /* Assicura che i contenuti stiano sopra lo sfondo opacizzato */
     padding: 3% 6%;
 }
 
@@ -138,7 +142,8 @@
     height: calc(90vh - var(--admin-header-height));
     display: flex;
     overflow: hidden;
-    opacity: 1; /* Ora rimarrà perfettamente a 100% di visibilità */
+    opacity: 1;
+    /* Ora rimarrà perfettamente a 100% di visibilità */
     padding: 15px 30px;
     gap: 15px;
     background-color: #0000006b;
@@ -153,7 +158,7 @@
 .poster-show-img {
     border-radius: 20px;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
 }
 
@@ -196,7 +201,7 @@
 }
 
 .movies-table {
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 0 10px;
 }
 
@@ -222,13 +227,15 @@ td:hover {
 /* Se vuoi chiudere anche i lati sinistro e destro della prima e dell'ultima cella */
 .movies-table tr td:first-child {
     border-left: 1px solid #e0e0e0;
-    border-top-left-radius: 8px;   /* Opzionale: angoli arrotondati */
+    border-top-left-radius: 8px;
+    /* Opzionale: angoli arrotondati */
     border-bottom-left-radius: 8px;
 }
 
 .movies-table tr td:last-child {
     border-right: 1px solid #e0e0e0;
-    border-top-right-radius: 8px;  /* Opzionale: angoli arrotondati */
+    border-top-right-radius: 8px;
+    /* Opzionale: angoli arrotondati */
     border-bottom-right-radius: 8px;
 }
 
@@ -237,22 +244,23 @@ td:hover {
 
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
 }
 
 /* Effetto hover specifico sull'icona */
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.05); /* Esempio di sfondo al passaggio */
-  border-radius: 4px;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Esempio di sfondo al passaggio */
+    border-radius: 4px;
 }
 
 input[type="date"]:hover {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  cursor: pointer;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
 }
 
 input[type="range"]:hover {
@@ -274,10 +282,47 @@ input[type="range"]:focus {
     z-index: 5;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color:plum;
+    color: plum;
     transition: all 0.2s;
 }
 
 .list-sort-btn:hover {
     color: rgb(243, 193, 243);
+}
+
+/* Genres */
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.create-genre-dropdown-menu {
+    background-color: #00000067;
+}
+
+.genres-btn-edit {
+    color: rgb(0, 159, 162);
+}
+
+.genres-btn-edit:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.genres-btn-delete {
+    color: rgb(185, 0, 169);
+}
+
+.genres-btn-delete:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.error-edit-genre-span {
+    color: red;
+    font-size: 0.85rem;
+    bottom: 0;
+    right: 0;
+    translate: -50% 85%;
+    background-color: #0000007b;
+    padding: 0 5px;
+    border-radius: 5px;
 }

@@ -22,6 +22,7 @@
                 <li><a class="dropdown-item" href="{{ route('admin.index') }}">Home</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.movies.index') }}">All Movies</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.movies.create') }}">Add Movie</a></li>
+                <li><a class="dropdown-item" href="{{ route('admin.genres.index') }}">All Genres</a></li>
             </ul>
         </div>
         <h1 class='future-font m-0'>Admin</h1>

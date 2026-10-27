@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController; 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MoviesResourceController;
+use App\Http\Controllers\GenresResourceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,6 +30,7 @@ Route::middleware(['auth', 'verified'])
             ->name('index');
         //instrado tutte le rotte crud accessibili solo ad admin
         Route::resource('movies', MoviesResourceController::class);
+        Route::resource('genres', GenresResourceController::class);
     } );
 
 require __DIR__.'/auth.php';

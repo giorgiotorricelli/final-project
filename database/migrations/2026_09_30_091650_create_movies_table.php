@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('tmdb_id')->nullable()->unique();
             $table->string('title', 50);
             $table->string('slug')->unique();
             $table->date('release_date');
+            $table->decimal('rating')->nullable();
+            $table->text('description')->nullable();
             $table->string('poster_path')->nullable();
             $table->string('backdrop_path')->nullable();
-            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

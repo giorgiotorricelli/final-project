@@ -111,7 +111,7 @@ class MoviesResourceController extends Controller
                 return back()
                     ->withInput()
                     ->withErrors([
-                        'title' => 'Esiste già un film registrato con questo titolo e questa data di rilascio.'
+                        'title' => 'There is already a movie with this title and release date.'
                     ]);
             }
         }
