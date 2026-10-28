@@ -36,7 +36,7 @@
                     <div class="d-flex g-2 position-relative">
                         <input type="text" name="name" id="{{ Str::camel($genre->name) }}" 
                             value="{{ old('name_' . (string) $genre->id) !== null ? old('name_' . (string) $genre->id) : $genre->name }}"
-                             class=" px-1" onclick="handleErrorVisibility()">
+                             class=" px-1" onclick="handleErrorVisibility()" @style('border-radius: 10px; border-style: none;')>
                         <button type="submit" class="genres-btn-edit btn btn-sm bi bi-hand-thumbs-up"></button>
     <!-- Quà ho personalizzato  il campo del nome dell'errore per distinzione, altrimenti una volta generato un errore
      quando la pagina torna indietro lo trasmette a tutti i form, stessa cosa per gli input -->

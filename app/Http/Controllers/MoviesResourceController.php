@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Http\Requests\StoreMovieRequest; //importo della mia request di validazione personalizzata
 use Illuminate\Http\Request;
 use App\Models\Movie;
+use App\Models\Genre;
 
 class MoviesResourceController extends Controller
 {
@@ -15,7 +16,8 @@ class MoviesResourceController extends Controller
      */
     public function index()
     {
-        $movieList = Movie::all();
+        // $movieList = Movie::all();
+        $movieList = Movie::with('genres')->get();
 
         return view('admin.movies.index', compact('movieList'));
     }
@@ -33,6 +35,27 @@ class MoviesResourceController extends Controller
      */
     public function store(Request $request) 
     {
+        $genreIdExists = true;
+
+        // controllo per i genres
+        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
+            $genre_ids = $request['genre_ids'];
+
+            foreach ($genre_ids as $genre_id) {
+                $genreIdExists = Genre::where('id', (int) $genre_id)->exists();
+            }
+
+
+        } 
+
+        if (!$genreIdExists) {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'genre_error' => "Check genre/s input values, wrong genre/s id/s"
+                    ]);
+        }
+
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
         
@@ -70,7 +93,12 @@ class MoviesResourceController extends Controller
         }
 
         // 5. Salviamo nel database
-        Movie::create($validated);
+        $movie = Movie::create($validated); // restituisce l'istanza del film creato
+
+        if (isset($request['genre_ids']) && count($request['genre_ids']) > 0 ) {
+            $movie->genres()->sync($request['genre_ids']);
+        }
+        
 
         return redirect()->route('admin.movies.index')->with('success', 'Film creato con successo!');
     }

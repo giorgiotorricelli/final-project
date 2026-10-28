@@ -10,7 +10,12 @@
         @foreach ($movieList as $movie)
         <div class="col">
             <a href="{{ route('admin.movies.show', $movie->slug) }}" class="movie-link">
-                <div class="movie-card-wrapper">
+                <div class="movie-card-wrapper position-relative">
+                    <div class="tag-box position-absolute ps-1 pt-1">
+                        @foreach ($movie->genres as $genre)
+                            <span class="tag" style="background-color: {{ $genre->color }}80; ">{{ $genre->name }}</span>
+                        @endforeach
+                    </div>
                     <x-movie-card :movie="$movie"/>
                 </div>
             </a>

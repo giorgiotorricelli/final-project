@@ -326,3 +326,10 @@ input[type="range"]:focus {
     padding: 0 5px;
     border-radius: 5px;
 }
+
+.tag {
+    border-radius: 10px; 
+    padding: 0 8px; 
+    text-wrap: nowrap; 
+    text-shadow: 1px 2px 4px;
+}

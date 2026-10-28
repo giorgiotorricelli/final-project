@@ -123,6 +123,9 @@ class GenresResourceController extends Controller
      */
     public function destroy(string $id)
     {
-        dd($id);
+        $genre = Genre::where('id', $id)->firstOrFail();
+        $genre->delete();
+        return redirect()->route('admin.genres.index'); 
+           
     }
 }
