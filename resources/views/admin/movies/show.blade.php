@@ -21,7 +21,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <form action="{{ route('admin.movies.destroy', $movie) }}" method="post">
+            <form action="{{ route('admin.movies.destroy', $movie->slug) }}" method="post">
                 @csrf
                 @method('DELETE')
 

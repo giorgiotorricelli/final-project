@@ -118,7 +118,7 @@ class MoviesResourceController extends Controller
      */
     public function edit(string $slug)
     {
-        $movie = Movie::where('slug', $slug)->firstOrFail();
+        $movie = Movie::where('slug', $slug)->with('genres')->firstOrFail();
 
         return view('admin.movies.edit', compact('movie'));
     }
@@ -128,7 +128,26 @@ class MoviesResourceController extends Controller
      */
     public function update(Request $request, Movie $movie)
     {
-        //dd($request->all(), $request->boolean('noPosterCheck'), $request->boolean('noBackdropCheck'));
+        $genreIdExists = true;
+
+        // controllo per i genres
+        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
+            $genre_ids = $request['genre_ids'];
+
+            foreach ($genre_ids as $genre_id) {
+                $genreIdExists = Genre::where('id', (int) $genre_id)->exists();
+            }
+
+
+        } 
+
+        if (!$genreIdExists) {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'genre_error' => "Check genre/s input values, wrong genre/s id/s"
+                    ]);
+        }
 
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
@@ -209,6 +228,10 @@ class MoviesResourceController extends Controller
         //dd($validated, $hasNoPoster, $hasNoBackdrop);
 
         $movie->update($validated);
+
+        if (isset($request['genre_ids']) && count($request['genre_ids']) > 0 ) {
+            $movie->genres()->sync($request['genre_ids']);
+        }
         return redirect()->route('admin.movies.show', $validated['slug']);
 
     }
