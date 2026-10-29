@@ -5,7 +5,7 @@
 @section('content')
 <div class="container position-relative">
     <div class="dropdown position-absolute" style="right: 0;">
-        <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-warning dropdown-toggle" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-plus-square"></i>
         </button>
         <div class="dropdown-menu create-genre-dropdown-menu" style="min-width: 300px">
@@ -16,7 +16,13 @@
                     <input class="form-control"  type="text" name="name" id="name" required value="{{ old('name') }}" onclick="removeCreateErrorVisibility()">
                     <!-- Mostra l'errore specifico per il campo 'name' -->
                     @error('name')
-                        <span id="create-error-span" class="d-block" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                        <span id="create-name-error-span" class="d-block" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                    @enderror
+                    <label for="color" class="form-label" style="color: white">Color</label>
+                    <input class="create-genre-color-input form-control"  type="color" name="color" id="color" 
+                    required value="{{ old('color') ?? '#77877d' }}" onclick="removeCreateErrorVisibility()">
+                    @error('color')
+                        <span id="create-color-error-span" class="d-block" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
                     @enderror
                     <button class="btn btn-outline-primary btn-sm mt-2" type="submit">Confirm</button>
                 </div>
@@ -95,12 +101,17 @@
     </div>
 
 <script>
-    const createErrorSpan = document.getElementById('create-error-span');
+    const createNameErrorSpan = document.getElementById('create-name-error-span');
+    const createColorErrorSpan = document.getElementById('create-color-error-span');
     
     // semplice funzione per rimuovere la visibility dell'errore 
     function removeCreateErrorVisibility() {
-        if (createErrorSpan) {
-            createErrorSpan.classList.add('d-none');
+        if (createNameErrorSpan) {
+            createNameErrorSpan.classList.add('d-none');
+        }
+
+        if (createColorErrorSpan) {
+            createColorErrorSpan.classList.add('d-none');
         }
         
     }

@@ -333,3 +333,13 @@ input[type="range"]:focus {
     text-wrap: nowrap; 
     text-shadow: 1px 2px 4px;
 }
+
+.create-genre-color-input {
+    width: 10%; 
+    padding: 0; 
+    border: none;
+}
+
+.create-genre-color-input:hover {
+    cursor: pointer;
+}

@@ -30,6 +30,7 @@ class GenresResourceController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:20'],
             'color' => ['required', 'string', 'max:7'],
@@ -37,8 +38,6 @@ class GenresResourceController extends Controller
 
         $validated['name'] = ucfirst($validated['name']); // ucfirst capitalizza la prima lettera
         $nameExists = Genre::where('name', $validated['name'])->exists();
-
-        dd(preg_match('/^#([a-f0-9]{3}|[a-f0-9]{6})$/i', $request['color']));
 
         if ($nameExists) {
             return back()
@@ -56,9 +55,19 @@ class GenresResourceController extends Controller
                     ]);
         }
 
+        if (!preg_match('/^#([a-f0-9]{3}|[a-f0-9]{6})$/i', $request['color'])) {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'color' => 'Non valid hex color.'
+                    ]);
+        }
+
         $newId = Genre::max('id') + 1;
 
         $validated['id'] = $newId;
+
+        //dd($validated);
 
         Genre::create($validated);
 
