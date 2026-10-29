@@ -56,8 +56,12 @@
                         @enderror
                     </div>
                 </form>
-                <h5 style="background-color: {{ $genre->color }};
+                <!-- Passo al controller l' array associativo 'genre_ids con solo un id'-->
+                <a href="{{ route('admin.movies.index', ['genre_ids' => [$genre->id]] ) }}" @style('text-decoration: none; color: white;')>
+                    <h5 style="background-color: {{ $genre->color }};
                 padding: 2px 7px; border-radius: 10px;" class=" m-0" id="title{{ Str::camel($genre->name) }}">{{ $genre->name }}</h5>
+                </a>
+                
                 <div> <!-- Metto la stessa stringa a id e name per passarla tramite event e selezionare l'input -->
                     <button type="button" class="genres-btn-edit btn btn-sm bi bi-pencil" 
                     name="title{{ Str::camel($genre->name) }}" onclick="handleUpdateVisibility(event)"></button>
