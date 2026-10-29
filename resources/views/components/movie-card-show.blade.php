@@ -21,6 +21,11 @@
         <div>
             <h3>{{ $movie->title }}</h3>
             <p>{{ $cleanDesc }}</p>
+            <div>
+                @foreach ($movie->genres as $genre)
+                    <span class="tag" style="background-color: {{ $genre->color }}80; ">{{ $genre->name }}</span>
+                @endforeach
+            </div>
         </div>
         <div class=" d-flex align-items-center justify-content-between">
             <div>

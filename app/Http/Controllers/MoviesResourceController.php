@@ -108,7 +108,7 @@ class MoviesResourceController extends Controller
      */
     public function show($slug)
     {
-        $movie = Movie::where('slug', $slug)->firstOrFail();
+        $movie = Movie::where('slug', $slug)->with('genres')->firstOrFail();
 
         return view('admin.movies.show', compact('movie'));
     }
