@@ -1,9 +1,40 @@
 @extends('admin.layouts.master')
 
+@use('App\Models\Genre')
+
+@php
+    $genres = Genre::all();
+@endphp
+
 @section('content')
-    <div @style('margin: 30px; display: flex; justify-content: center; gap: 15px;')>
+    <div class=" position-relative" @style('margin: 30px; display: flex; justify-content: center; gap: 15px;')>
         <button id="listBtn" class="btn btn-warning" onclick="toggleView(true)"><i class=" bi bi-list-ol"></i></button>
         <button id="gridBtn" class="btn btn-outline-warning" onclick="toggleView(false)"><i class="bi bi-file-earmark-image"></i></button>
+        <div class="position-absolute" @style('right: 0;')>
+            <div class="dropstart">
+                <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno-->
+                <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    Choose genres
+                </button>
+                
+                <div class="dropdown-menu p-3" style="min-width: 250px;">
+                    <form action="{{ route('admin.movies.index' ) }}" method="get">
+                    @foreach ($genres as $genre)
+                        <div class="form-check form-switch mb-1">
+                            <input name="genre_ids[]" id="genre-{{ $genre->id }}" value="{{ $genre->id }}" class="form-check-input" type="checkbox" role="switch"
+                            {{ in_array($genre->id, request('genre_ids', [])) ? 'checked' : '' }}>
+                            <label class="form-check-label" for="genre-{{ $genre->id }}">{{ $genre->name }}</label>
+                        </div>
+                    @endforeach
+                    <button type="submit" class="btn btn-sm btn-primary">Search</button>
+                    @error('genre_error')
+                    <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                    @enderror
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container" onclick="listSort(event)"> <!-- ascolta gli eventi di click per la sort -->
         <div id="gridView" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 g-3" style="display: none;">

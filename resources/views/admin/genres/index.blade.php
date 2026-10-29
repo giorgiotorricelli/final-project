@@ -33,19 +33,25 @@
                     @csrf
                     @method('PUT')
                     
-                    <div class="d-flex g-2 position-relative">
+                    <div class="d-flex g-2 position-relative align-items-center">
                         <input type="text" name="name" id="{{ Str::camel($genre->name) }}" 
                             value="{{ old('name_' . (string) $genre->id) !== null ? old('name_' . (string) $genre->id) : $genre->name }}"
                              class=" px-1" onclick="handleErrorVisibility()" @style('border-radius: 10px; border-style: none;')>
+                        <input type="color" name="color" id="color{{ Str::camel($genre->name) }}" value="{{ $genre->color }}"
+                        style="width: 15px; height: 15px;">
                         <button type="submit" class="genres-btn-edit btn btn-sm bi bi-hand-thumbs-up"></button>
     <!-- Quà ho personalizzato  il campo del nome dell'errore per distinzione, altrimenti una volta generato un errore
      quando la pagina torna indietro lo trasmette a tutti i form, stessa cosa per gli input -->
                         @error('name_' . (string) $genre->id)
                         <span class="position-absolute error-edit-genre-span">{{ $message }}</span>
                         @enderror
+                        @error('color_' . (string) $genre->id)
+                        <span class="position-absolute error-edit-genre-span">{{ $message }}</span>
+                        @enderror
                     </div>
                 </form>
-                <h5 class="m-0" id="title{{ Str::camel($genre->name) }}">{{ $genre->name }}</h5>
+                <h5 style="background-color: {{ $genre->color }};
+                padding: 2px 7px; border-radius: 10px;" class=" m-0" id="title{{ Str::camel($genre->name) }}">{{ $genre->name }}</h5>
                 <div> <!-- Metto la stessa stringa a id e name per passarla tramite event e selezionare l'input -->
                     <button type="button" class="genres-btn-edit btn btn-sm bi bi-pencil" 
                     name="title{{ Str::camel($genre->name) }}" onclick="handleUpdateVisibility(event)"></button>

@@ -14,10 +14,32 @@ class MoviesResourceController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         // $movieList = Movie::all();
-        $movieList = Movie::with('genres')->get();
+
+        $existingIds = [];
+
+        // controllo per i genres
+        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
+            $genre_ids = $request['genre_ids'];
+
+            foreach ($genre_ids as $genre_id) {
+                if (Genre::where('id', (int) $genre_id)->exists()) {
+                    $existingIds[] = $genre_id;
+                }
+            }
+
+        } 
+
+        if (isset($request['genre_ids']) && count($existingIds) > 0) {
+            $movieList = Movie::whereHas('genres', function ($genresTable) use($existingIds) {
+                $genresTable->whereIn('genres.id', $existingIds);
+            })->with('genres')->get();
+        } else {
+            $movieList = Movie::with('genres')->get();
+        }
+        
 
         return view('admin.movies.index', compact('movieList'));
     }

@@ -32,10 +32,13 @@ class GenresResourceController extends Controller
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:20'],
+            'color' => ['required', 'string', 'max:7'],
         ]);
 
         $validated['name'] = ucfirst($validated['name']); // ucfirst capitalizza la prima lettera
         $nameExists = Genre::where('name', $validated['name'])->exists();
+
+        dd(preg_match('/^#([a-f0-9]{3}|[a-f0-9]{6})$/i', $request['color']));
 
         if ($nameExists) {
             return back()
@@ -84,9 +87,11 @@ class GenresResourceController extends Controller
     public function update(Request $request, string $id)
     {
         // personalizedKey è la stringa con la quale personalizzo il nome dell'errore
-        $personalizedKey = 'name_' . (string) $id;
+        $personalizedNameKey = 'name_' . (string) $id;
+        $personalizedColorKey = 'color_' . (string) $id;
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:20'],
+            'color' => ['required', 'string', 'max:7'],
         ]);
 
         $validated['name'] = ucfirst($validated['name']); // ucfirst capitalizza la prima lettera
@@ -95,7 +100,15 @@ class GenresResourceController extends Controller
             return back()
                     ->withInput()
                     ->withErrors([
-                        $personalizedKey => 'Allowed: a-z A-Z and spaces only.'
+                        $personalizedNameKey => 'Allowed: a-z A-Z and spaces only.'
+                    ]);
+        }
+
+        if (!preg_match('/^#([a-f0-9]{3}|[a-f0-9]{6})$/i', $request['color'])) {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        $personalizedColorKey => 'Non valid hex color.'
                     ]);
         }
 
@@ -104,16 +117,16 @@ class GenresResourceController extends Controller
         
         $exists = Genre::where('name', $validated['name'])->exists();
 
-        if($exists) {
+        if($exists && $validated['name'] !== $genre->name) {
             return back()
                     ->withInput()
                     ->withErrors([
-                        $personalizedKey => "Name already taken.",
+                        $personalizedNameKey => "Name already taken.",
                     ]);
         }
-        
 
         $genre->name = $validated['name'];
+        $genre->color = $validated['color'];
         $genre->save();
         return redirect()->route('admin.genres.index');
     }
