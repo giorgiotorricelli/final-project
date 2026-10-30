@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Genre;
 use App\Models\Actor;
+use App\Models\Director;
 
 class Movie extends Model
 {
@@ -25,5 +26,9 @@ class Movie extends Model
 
     public function actors() {
         return $this->belongsToMany(Actor::class);
+    }
+
+    public function director() {
+        return $this->belongsTo(Director::class);
     }
 }

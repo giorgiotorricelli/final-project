@@ -15,7 +15,7 @@ class Actor extends Model
         "biography",
         "birthday",
         "deathday",
-        "place_of_birth"
+        "place_of_birth",
     ];
 
     public function movies() {
