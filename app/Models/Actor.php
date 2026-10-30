@@ -11,7 +11,11 @@ class Actor extends Model
         'id',
         'name',
         'popularity',
-        'profile_path'
+        'profile_path',
+        "biography",
+        "birthday",
+        "deathday",
+        "place_of_birth"
     ];
 
     public function movies() {
