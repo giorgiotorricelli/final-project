@@ -1,8 +1,12 @@
 @extends('admin.layouts.master')
 
 @use('App\Models\Genre')
+@use('App\Models\Actor')
+@use('App\Models\Director')
 @php
-    $genres = Genre::all();
+    $genres = Genre::all()->sortBy('name');
+    $actors = Actor::all()->sortBy('name');
+    $directors = Director::all()->sortBy('name');
 @endphp
 
 @section('content')
@@ -17,15 +21,12 @@
                     <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
                 @enderror
             </div>
-            <div style="translate: 0 50%;">
-                <div class="dropstart">
+            <div style="translate: 0 50%;" class=" d-flex gap-2">
+                <div class="dropstart" class="position-relative">
                     <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno-->
                     <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         Choose genres
                     </button>
-                    @error('genre_error')
-                        <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
-                    @enderror
                     
                     <div class="dropdown-menu p-3" style="min-width: 250px;">
                         @foreach ($genres as $genre)
@@ -35,7 +36,56 @@
                             </div>
                         @endforeach
                     </div>
+                    <div>
+                        @error('genre_ids')
+                        <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                    @enderror
+                    </div>
                 </div>
+                <div class="dropstart" class=" position-relative">
+                    <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno -->
+                    <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Choose Actors
+                    </button>
+                    
+                    <!-- Aggiunto max-height e overflow-y: auto per consentire scroll-->
+                    <div class="dropdown-menu p-3" style="min-width: 250px; max-height: 200px; overflow-y: auto;">
+                        @foreach ($actors as $actor)
+                            <div class="form-check form-switch mb-1">
+                                <input name="actor_ids[]" id="actor-{{ $actor->id }}" value="{{ $actor->id }}" class="form-check-input" type="checkbox" role="switch">
+                                <label class="form-check-label" for="actor-{{ $actor->id }}">{{ $actor->name }}</label>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div>
+                        @error('actor_ids')
+                        <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                    @enderror
+                    </div>
+                    
+                </div>
+                <div class=" position-relative">
+                    <div class="dropstart">
+                    <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno -->
+                    <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Choose Director
+                    </button>
+                    
+                    <!-- Aggiunto max-height e overflow-y: auto per consentire scroll-->
+                    <div class="dropdown-menu p-3" style="min-width: 250px; max-height: 200px; overflow-y: auto;">
+                        @foreach ($directors as $director)
+                            <div class="form-check form-switch mb-1">
+                                <input name="director_id" id="director-{{ $director->id }}" value="{{ $director->id }}" class="form-check-input" type="radio" role="switch">
+                                <label class="form-check-label" for="director-{{ $director->id }}">{{ $director->name }}</label>
+                            </div>
+                        @endforeach
+                    </div>
+                    </div>
+                    @error('director_id')
+                            <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                    @enderror
+                </div>
+                
             </div>
             
             <!-- Mostra l'errore specifico per il campo 'title' -->

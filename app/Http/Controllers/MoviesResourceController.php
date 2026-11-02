@@ -8,6 +8,8 @@ use App\Http\Requests\StoreMovieRequest; //importo della mia request di validazi
 use Illuminate\Http\Request;
 use App\Models\Movie;
 use App\Models\Genre;
+use App\Models\Actor;
+use App\Models\Director;
 
 class MoviesResourceController extends Controller
 {
@@ -37,7 +39,7 @@ class MoviesResourceController extends Controller
                 $genresTable->whereIn('genres.id', $existingIds);
             })->with('genres')->get();
         } else {
-            $movieList = Movie::with('genres')->get();
+            $movieList = Movie::with('genres')->with('actors')->get();
         }
         
 
@@ -68,15 +70,50 @@ class MoviesResourceController extends Controller
             }
 
 
-        } 
+        } else {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'genre_ids' => "You have to select at least one genre."
+                    ]);
+        }
 
         if (!$genreIdExists) {
             return back()
                     ->withInput()
                     ->withErrors([
-                        'genre_error' => "Check genre/s input values, wrong genre/s id/s"
+                        'genre_ids' => "Check genre/s input values, wrong genre/s id/s"
                     ]);
         }
+
+        $actorIdExists = true;
+
+        // controllo per gli actors
+        if (isset($request['actor_ids'])) { // array associativo con gli id dei generi
+            $actor_ids = $request['actor_ids'];
+
+            foreach ($actor_ids as $actor_id) {
+                $actorIdExists = Actor::where('id', (int) $actor_id)->exists();
+            }
+
+
+        } else {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'actor_ids' => "You have to select at least one actor."
+                    ]);
+        }
+
+        if (!$actorIdExists) {
+            return back()
+                    ->withInput()
+                    ->withErrors([
+                        'actor_ids' => "Check actor/s input values, wrong actor/s id/s"
+                    ]);
+        }
+
+        // Nota: il controllo del director id viene fatto nella funzione validate, non sono riuscito a fare lo stesso per actors e genres
 
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
@@ -96,11 +133,15 @@ class MoviesResourceController extends Controller
         $validated = $request->validate([
             'tmdb_id' => ['nullable', 'integer', 'max:20'],
             'title' => ['required', 'string', 'max:255'],
+            'director_id' => ['required', 'exists:directors,id'], //controllo esistenza director
             'release_date' => ['required', 'date'],
             'rating' => ['nullable', 'numeric'],
             'description' => ['nullable', 'string', 'max:500'],
             'poster_path' => ['nullable', 'image'],
             'backdrop_path' => ['nullable', 'image'],
+        ] , [ // array di errori personalizzati
+            'director_id.required' => 'You have to select a director.',
+            'director_id.exists' => 'Director id is invalid.',
         ]);
 
         // 4. Aggiungiamo lo slug ai dati validati
@@ -113,13 +154,17 @@ class MoviesResourceController extends Controller
         if (isset($validated['backdrop_path'])) {
             $validated['backdrop_path'] = Storage::disk('public')->put('backdrops', $validated['backdrop_path']);
         }
-
+        
         // 5. Salviamo nel database
         $movie = Movie::create($validated); // restituisce l'istanza del film creato
 
         if (isset($request['genre_ids']) && count($request['genre_ids']) > 0 ) {
             $movie->genres()->sync($request['genre_ids']);
         }
+
+        if (isset($request['actor_ids']) && count($request['actor_ids']) > 0 ) {
+            $movie->actors()->sync($request['actor_ids']);
+        } 
         
 
         return redirect()->route('admin.movies.index')->with('success', 'Film creato con successo!');

@@ -31,11 +31,16 @@ class DownloadActorsPicCommand extends Command
         $api_key = config('services.tmdb.api_key');
 
         foreach ($actors as $actor) {
-            if ($actor->profile_path === null) {
+            $actorId = $actor->id;
+            $detailsPath = "https://api.themoviedb.org/3/person/$actorId?api_key=$api_key";
+            $detailResponse = Http::get($detailsPath);
+
+            if ($detailResponse->successful()) {
+                $profile_path = $detailResponse['profile_path'];
+            } else {
                 continue;
             }
-            $profile_path = $actor->profile_path;
-            $baseUrl = "https://image.tmdb.org/t/p/w185$profile_path?api_key=$api_key";
+            $baseUrl = "https://image.tmdb.org/t/p/original$profile_path?api_key=$api_key";
             $response = Http::get($baseUrl);
 
             if ($response->successful()) {

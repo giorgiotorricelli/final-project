@@ -26,6 +26,16 @@
                     <span class="tag" style="background-color: {{ $genre->color }}80; ">{{ $genre->name }}</span>
                 @endforeach
             </div>
+            <h5 class="mt-3">Actors</h5>
+            <div class=" d-flex gap-3 mt-2">
+                @foreach ($movie->actors as $actor)
+                <a href="{{ route('admin.actors.show', $actor->id) }}" class="text-decoration-none">
+                    <div class="movie-show-actor-img-wrapper">
+                        <img class="movie-show-actor-img" src="{{ Storage::url($actor->profile_path) }}" alt="{{$actor->name}}image">
+                    </div>
+                </a>
+                @endforeach
+            </div>
         </div>
         <div class=" d-flex align-items-center justify-content-between">
             <div>
