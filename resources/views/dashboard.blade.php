@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <a class=" d-inline" href="{{ route('admin.index' )}}"><button class=" btn btn-primary">Sezione admin</button></a>
+                <a class=" d-inline" href="{{ route('admin.movies.index' )}}"><button class=" btn btn-primary">Go to your admin page</button></a>
             </div>
         </div>
     </div>

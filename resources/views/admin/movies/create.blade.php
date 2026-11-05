@@ -15,15 +15,14 @@
         @csrf
         <div class="mb-3 d-flex justify-content-between">
             <div>
-                <label for="title" class="form-label">Tilte</label>
-                <input class="form-control"  type="text" name="title" id="title" required value="{{ old('title') }}">
+                <label for="title" class="form-label">Title</label>
+                <input class="form-control" type="text" name="title" id="title" required value="{{ old('title') }}">
                 @error('title')
                     <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
                 @enderror
             </div>
-            <div style="translate: 0 50%;" class=" d-flex gap-2">
-                <div class="dropstart" class="position-relative">
-                    <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno-->
+            <div style="translate: 0 50%;" class="d-flex gap-2">
+                <div class="dropstart position-relative">
                     <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         Choose genres
                     </button>
@@ -38,17 +37,15 @@
                     </div>
                     <div>
                         @error('genre_ids')
-                        <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
-                    @enderror
+                            <span class="position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
-                <div class="dropstart" class=" position-relative">
-                    <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno -->
+                <div class="dropstart position-relative">
                     <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         Choose Actors
                     </button>
                     
-                    <!-- Aggiunto max-height e overflow-y: auto per consentire scroll-->
                     <div class="dropdown-menu p-3" style="min-width: 250px; max-height: 200px; overflow-y: auto;">
                         @foreach ($actors as $actor)
                             <div class="form-check form-switch mb-1">
@@ -59,37 +56,30 @@
                     </div>
                     <div>
                         @error('actor_ids')
-                        <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
-                    @enderror
+                            <span class="position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                        @enderror
                     </div>
-                    
                 </div>
-                <div class=" position-relative">
+                <div class="position-relative">
                     <div class="dropstart">
-                    <!-- Aggiunto data-bs-auto-close="outside" per dire a bootstrap di chiudere il dropdown solo cliccando all'esterno -->
-                    <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                        Choose Director
-                    </button>
-                    
-                    <!-- Aggiunto max-height e overflow-y: auto per consentire scroll-->
-                    <div class="dropdown-menu p-3" style="min-width: 250px; max-height: 200px; overflow-y: auto;">
-                        @foreach ($directors as $director)
-                            <div class="form-check form-switch mb-1">
-                                <input name="director_id" id="director-{{ $director->id }}" value="{{ $director->id }}" class="form-check-input" type="radio" role="switch">
-                                <label class="form-check-label" for="director-{{ $director->id }}">{{ $director->name }}</label>
-                            </div>
-                        @endforeach
-                    </div>
+                        <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Choose Director
+                        </button>
+                        
+                        <div class="dropdown-menu p-3" style="min-width: 250px; max-height: 200px; overflow-y: auto;">
+                            @foreach ($directors as $director)
+                                <div class="form-check form-switch mb-1">
+                                    <input name="director_id" id="director-{{ $director->id }}" value="{{ $director->id }}" class="form-check-input" type="radio" role="switch" @checked(old('director_id') == $director->id)>
+                                    <label class="form-check-label" for="director-{{ $director->id }}">{{ $director->name }}</label>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                     @error('director_id')
-                            <span class=" position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
+                        <span class="position-absolute" style="color: red; font-size: 0.85rem;">{{ $message }}</span>
                     @enderror
                 </div>
-                
             </div>
-            
-            <!-- Mostra l'errore specifico per il campo 'title' -->
-            
         </div>
         <div class="mb-3">
             <label for="release_date" class="form-label">Release Date</label>
@@ -100,29 +90,28 @@
         </div>
         <div class="mb-3">
             <label for="rating" class="form-label">Rating</label>
-            <div class=" d-flex align-items-center gap-3 h-100">
-                <input onchange="ratingHandler()" class="form-control w-25"  type="range" min="1" max="10" step="0.01" name="rating" id="rating" value="{{ old('rating') }}">
+            <div class="d-flex align-items-center gap-3 h-100">
+                <input onchange="ratingHandler()" class="form-control w-25" type="range" min="1" max="10" step="0.01" name="rating" id="rating" value="{{ old('rating') }}">
                 <span id="rating-display" style="text-align: center; min-width: 50px; border: 2px solid white; border-radius: 10px">5.0</span>
             </div>
-            
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label><br>
-            <textarea name="description" id="description" class=" w-100 p-2" style="border-radius: 15px; min-height: 100px;">{{ old('description') }}</textarea>
+            <textarea name="description" id="description" class="w-100 p-2" style="border-radius: 15px; min-height: 100px;">{{ old('description') }}</textarea>
             @error('description')
                 <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="poster_path" class="form-label">Vertical Poster</label>
-            <input class="form-control"  type="file" name="poster_path" id="poster_path">
+            <input class="form-control" type="file" name="poster_path" id="poster_path">
             @error('poster_path')
                 <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
             @enderror
         </div>
         <div class="mb-3">
             <label for="backdrop_path" class="form-label">Horizontal Poster</label>
-            <input class="form-control"  type="file" name="backdrop_path" id="backdrop_path">
+            <input class="form-control" type="file" name="backdrop_path" id="backdrop_path">
             @error('backdrop_path')
                 <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
             @enderror
@@ -130,18 +119,13 @@
                 <span style="color: red; font-size: 0.85rem;">{{ $message }}</span>
             @enderror
         </div>
-        <button class=" btn btn-warning" type="submit">Confirm</button>
-        
-
+        <button class="btn btn-warning" type="submit">Confirm</button>
     </form>
     </div>
     <script>
         function ratingHandler() {
             let value = document.getElementById('rating').value;
             document.getElementById('rating-display').innerText = value;
-            
         }
-        
     </script>
-    
 @endsection

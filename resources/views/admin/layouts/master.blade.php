@@ -19,10 +19,11 @@
                 <i class="bi bi-list"></i>
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{{ route('admin.index') }}">Home</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.movies.index') }}">All Movies</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.genres.index') }}">All Genres</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.actors.index') }}">All Actors</a></li>
+                <li><a class="dropdown-item" href="{{ route('admin.directors.index') }}">All Directors</a></li>
+                <li><a class="dropdown-item" href="{{ route('admin.directors.create') }}">Add Director</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.movies.create') }}">Add Movie</a></li>
                 <li><a class="dropdown-item" href="{{ route('admin.actors.create') }}">Add Actor</a></li>
             </ul>

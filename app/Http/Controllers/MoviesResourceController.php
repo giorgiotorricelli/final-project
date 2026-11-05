@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use App\Http\Requests\StoreMovieRequest; //importo della mia request di validazione personalizzata
+use App\Http\Requests\StoreMovieRequest; 
 use Illuminate\Http\Request;
 use App\Models\Movie;
 use App\Models\Genre;
@@ -18,12 +18,9 @@ class MoviesResourceController extends Controller
      */
     public function index(Request $request)
     {
-        // $movieList = Movie::all();
-
         $existingIds = [];
 
-        // controllo per i genres
-        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
+        if (isset($request['genre_ids'])) {
             $genre_ids = $request['genre_ids'];
 
             foreach ($genre_ids as $genre_id) {
@@ -31,18 +28,16 @@ class MoviesResourceController extends Controller
                     $existingIds[] = $genre_id;
                 }
             }
-
         } 
 
         if (isset($request['genre_ids']) && count($existingIds) > 0) {
             $movieList = Movie::whereHas('genres', function ($genresTable) use($existingIds) {
                 $genresTable->whereIn('genres.id', $existingIds);
-            })->with('genres')->get();
+            })->with('genres', 'actors', 'director')->get();
         } else {
-            $movieList = Movie::with('genres')->with('actors')->get();
+            $movieList = Movie::with('genres', 'actors', 'director')->get();
         }
         
-
         return view('admin.movies.index', compact('movieList'));
     }
 
@@ -59,69 +54,10 @@ class MoviesResourceController extends Controller
      */
     public function store(Request $request) 
     {
-        $genreIdExists = true;
-
-        // controllo per i genres
-        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
-            $genre_ids = $request['genre_ids'];
-
-            foreach ($genre_ids as $genre_id) {
-                $genreIdExists = Genre::where('id', (int) $genre_id)->exists();
-            }
-
-
-        } else {
-            return back()
-                    ->withInput()
-                    ->withErrors([
-                        'genre_ids' => "You have to select at least one genre."
-                    ]);
-        }
-
-        if (!$genreIdExists) {
-            return back()
-                    ->withInput()
-                    ->withErrors([
-                        'genre_ids' => "Check genre/s input values, wrong genre/s id/s"
-                    ]);
-        }
-
-        $actorIdExists = true;
-
-        // controllo per gli actors
-        if (isset($request['actor_ids'])) { // array associativo con gli id dei generi
-            $actor_ids = $request['actor_ids'];
-
-            foreach ($actor_ids as $actor_id) {
-                $actorIdExists = Actor::where('id', (int) $actor_id)->exists();
-            }
-
-
-        } else {
-            return back()
-                    ->withInput()
-                    ->withErrors([
-                        'actor_ids' => "You have to select at least one actor."
-                    ]);
-        }
-
-        if (!$actorIdExists) {
-            return back()
-                    ->withInput()
-                    ->withErrors([
-                        'actor_ids' => "Check actor/s input values, wrong actor/s id/s"
-                    ]);
-        }
-
-        // Nota: il controllo del director id viene fatto nella funzione validate, non sono riuscito a fare lo stesso per actors e genres
 
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
-        
-        // 2. CONTROLLO MANUALE DEL DOPPIONE NEL DB
         if (Movie::where('slug', $slug)->exists()) {
-            // Se esiste già, torniamo indietro bloccando tutto, 
-            // tenendo i vecchi input e stampando l'errore sul campo 'title'
             return back()
                 ->withInput()
                 ->withErrors([
@@ -129,22 +65,26 @@ class MoviesResourceController extends Controller
                 ]);
         }
 
-        // 3. Validiamo gli altri campi standard
         $validated = $request->validate([
             'tmdb_id' => ['nullable', 'integer', 'max:20'],
             'title' => ['required', 'string', 'max:255'],
-            'director_id' => ['required', 'exists:directors,id'], //controllo esistenza director
+            'director_id' => ['required', 'exists:directors,id'],
             'release_date' => ['required', 'date'],
             'rating' => ['nullable', 'numeric'],
             'description' => ['nullable', 'string', 'max:500'],
             'poster_path' => ['nullable', 'image'],
             'backdrop_path' => ['nullable', 'image'],
-        ] , [ // array di errori personalizzati
+            'genre_ids' => ['nullable', 'array'],
+            'genre_ids.*' => ['integer', 'exists:genres,id'],
+            'actor_ids' => ['nullable', 'array'],
+            'actor_ids.*' => ['integer', 'exists:actors,id'],
+        ], [
             'director_id.required' => 'You have to select a director.',
             'director_id.exists' => 'Director id is invalid.',
         ]);
 
-        // 4. Aggiungiamo lo slug ai dati validati
+        unset($validated['genre_ids']);
+        unset($validated['actor_ids']);
         $validated['slug'] = $slug;
 
         if (isset($validated['poster_path'])) {
@@ -155,8 +95,7 @@ class MoviesResourceController extends Controller
             $validated['backdrop_path'] = Storage::disk('public')->put('backdrops', $validated['backdrop_path']);
         }
         
-        // 5. Salviamo nel database
-        $movie = Movie::create($validated); // restituisce l'istanza del film creato
+        $movie = Movie::create($validated);
 
         if (isset($request['genre_ids']) && count($request['genre_ids']) > 0 ) {
             $movie->genres()->sync($request['genre_ids']);
@@ -166,7 +105,6 @@ class MoviesResourceController extends Controller
             $movie->actors()->sync($request['actor_ids']);
         } 
         
-
         return redirect()->route('admin.movies.index')->with('success', 'Film creato con successo!');
     }
 
@@ -175,8 +113,7 @@ class MoviesResourceController extends Controller
      */
     public function show($slug)
     {
-        $movie = Movie::where('slug', $slug)->with('genres')->firstOrFail();
-
+        $movie = Movie::where('slug', $slug)->with('genres', 'actors', 'director')->firstOrFail();
         return view('admin.movies.show', compact('movie'));
     }
 
@@ -185,8 +122,7 @@ class MoviesResourceController extends Controller
      */
     public function edit(string $slug)
     {
-        $movie = Movie::where('slug', $slug)->with('genres')->firstOrFail();
-
+        $movie = Movie::where('slug', $slug)->with('genres', 'actors', 'director')->firstOrFail();
         return view('admin.movies.edit', compact('movie'));
     }
 
@@ -197,31 +133,25 @@ class MoviesResourceController extends Controller
     {
         $genreIdExists = true;
 
-        // controllo per i genres
-        if (isset($request['genre_ids'])) { // array associativo con gli id dei generi
+        if (isset($request['genre_ids'])) {
             $genre_ids = $request['genre_ids'];
-
             foreach ($genre_ids as $genre_id) {
                 $genreIdExists = Genre::where('id', (int) $genre_id)->exists();
+
+                if (!$genreIdExists) {
+                    return back()
+                            ->withInput()
+                            ->withErrors([
+                                'genre_error' => "Check genre/s input values, wrong genre/s id/s"
+                            ]);
+                }
             }
-
-
         } 
-
-        if (!$genreIdExists) {
-            return back()
-                    ->withInput()
-                    ->withErrors([
-                        'genre_error' => "Check genre/s input values, wrong genre/s id/s"
-                    ]);
-        }
 
         $slug = Str::slug($request->title . ' ' . $request->release_date);
 
         if ($slug !== $movie->slug) {
             if (Movie::where('slug', $slug)->exists()) {
-                // Se esiste già, torniamo indietro bloccando tutto,
-                // tenendo i vecchi input e stampando l'errore sul campo 'title'
                 return back()
                     ->withInput()
                     ->withErrors([
@@ -233,74 +163,73 @@ class MoviesResourceController extends Controller
         $validated = $request->validate([
             'tmdb_id' => ['nullable', 'integer', 'max:20'],
             'title' => ['required', 'string', 'max:255'],
+            'director_id' => ['required', 'exists:directors,id'],
             'release_date' => ['required', 'date'],
             'rating' => ['nullable', 'numeric'],
             'description' => ['nullable', 'string', 'max:500'],
             'poster_path' => ['nullable', 'image'],
             'backdrop_path' => ['nullable', 'image'],
+            "actor_ids" => ['nullable', 'array'], 
+            "actor_ids.*" => ['string', 'exists:actors,id'],
+        ], [
+            'director_id.required' => 'You have to select a director.',
+            'director_id.exists' => 'Director id is invalid.',
         ]);
 
+
+        unset($validated['actor_ids']); //li rimuovo perchè devo usare sync e update andrebbe in errore
         $validated['slug'] = $slug;
 
-        // dd($validated);
-        
+        $hasNoPoster = $request->boolean('noPosterCheck');
+        $hasNoBackdrop = $request->boolean('noBackdropCheck');
 
-        $hasNoPoster = $request->boolean('noPosterCheck'); // se è stata spuntata non c'è poster
-        $hasNoBackdrop = $request->boolean('noBackdropCheck'); // se è stata spuntata non c'è backdrop
-
-        if (!$hasNoPoster) { // quindi: 1. c'è il poster nuovo, 2. c'è quello vecchio 3. o non c'è mai stato un poster
-
-            // vedo se il poster nuovo non c'è
+        if (!$hasNoPoster) {
             if (!isset($validated['poster_path'])) {
-                if ($movie->poster_path !== null) { // caso 2
-                    // in questo caso non cancello nessun poster da public
+                if ($movie->poster_path !== null) {
                     $validated['poster_path'] = $movie->poster_path;
                 } 
-            } else { // se c'è il poster nuovo
+            } else {
                 if ($movie->poster_path && Storage::disk('public')->exists($movie->poster_path)) {
-                    Storage::disk('public')->delete($movie->poster_path); // cancello quello vecchio se esiste
+                    Storage::disk('public')->delete($movie->poster_path);
                 }
                 $validated['poster_path'] = Storage::disk('public')->put('posters', $validated['poster_path']);
             }
-
-            // da notare come caso 1 e 3 sono già validati dalla funzione validate() 
-
         } else {
             if ($movie->poster_path && Storage::disk('public')->exists($movie->poster_path)) {
-                Storage::disk('public')->delete($movie->poster_path); // cancello quello vecchio se esiste
+                Storage::disk('public')->delete($movie->poster_path);
             }
             $validated['poster_path'] = null;
         }
         
-
-        if (!$hasNoBackdrop) { // stesso controllo di prima
-
+        if (!$hasNoBackdrop) {
             if (!isset($validated['backdrop_path'])) {
                 if ($movie->backdrop_path !== null) {
                     $validated['backdrop_path'] = $movie->backdrop_path;
                 }
-            } else { // se c'è il poster nuovo
+            } else {
                 if ($movie->backdrop_path && Storage::disk('public')->exists($movie->backdrop_path)) {
-                    Storage::disk('public')->delete($movie->backdrop_path); // cancello quello vecchio se esiste
+                    Storage::disk('public')->delete($movie->backdrop_path);
                 }
                 $validated['backdrop_path'] = Storage::disk('public')->put('backdrops', $validated['backdrop_path']);
             }
         } else {
             if ($movie->backdrop_path && Storage::disk('public')->exists($movie->backdrop_path)) {
-                Storage::disk('public')->delete($movie->backdrop_path); // cancello quello vecchio se esiste
+                Storage::disk('public')->delete($movie->backdrop_path);
             }
             $validated['backdrop_path'] = null;
         }
 
-        //dd($validated, $hasNoPoster, $hasNoBackdrop);
-
         $movie->update($validated);
+
 
         if (isset($request['genre_ids']) && count($request['genre_ids']) > 0 ) {
             $movie->genres()->sync($request['genre_ids']);
         }
-        return redirect()->route('admin.movies.show', $validated['slug']);
 
+        if (isset($request['actor_ids']) && count($request['actor_ids']) > 0 ) {
+            $movie->actors()->sync($request['actor_ids']);
+        }
+        return redirect()->route('admin.movies.show', $validated['slug']);
     }
 
     /**
@@ -309,6 +238,11 @@ class MoviesResourceController extends Controller
     public function destroy(string $slug)
     {
         $movie = Movie::where('slug', $slug)->firstOrFail();
+
+        if ($movie->poster_path && Storage::disk('public')->exists($movie->poster_path)) {
+            Storage::disk('public')->delete($movie->poster_path);
+        }
+        
         $movie->delete();
         return redirect()->route('admin.movies.index');
     }

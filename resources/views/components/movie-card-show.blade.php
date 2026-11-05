@@ -18,7 +18,7 @@
                     <i class=" bi bi-trash"></i>
                 </button>
             </div>
-        <div>
+        <div class=" flex-grow-1">
             <h3>{{ $movie->title }}</h3>
             <p>{{ $cleanDesc }}</p>
             <div>
@@ -26,18 +26,40 @@
                     <span class="tag" style="background-color: {{ $genre->color }}80; ">{{ $genre->name }}</span>
                 @endforeach
             </div>
-            <h5 class="mt-3">Actors</h5>
-            <div class=" d-flex gap-3 mt-2">
-                @foreach ($movie->actors as $actor)
-                <a href="{{ route('admin.actors.show', $actor->id) }}" class="text-decoration-none">
-                    <div class="movie-show-actor-img-wrapper">
-                        <img class="movie-show-actor-img" src="{{ Storage::url($actor->profile_path) }}" alt="{{$actor->name}}image">
+            <div class="d-flex justify-content-between align-items-start gap-4 mt-3">
+                
+                {{-- Sezione Actors --}}
+                @if(isset($movie->actors) && $movie->actors->count() > 0)
+                    <div class="flex-grow-1">
+                        <h5 class="m-0">Actors</h5>
+                        <div class="d-flex gap-3 mt-2 flex-wrap">
+                            @foreach ($movie->actors as $actor)
+                                <a href="{{ route('admin.actors.show', $actor->id) }}" class="text-decoration-none">
+                                    <div class="movie-show-actor-img-wrapper" title="{{ $actor->name }}">
+                                        <img class="movie-show-actor-img" src="{{ $actor->profile_path ? Storage::url($actor->profile_path) : 'https://placehold.co/100x150/481c7a/fff/png?text=Actor' }}" alt="{{ $actor->name }}">
+                                    </div>
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
-                </a>
-                @endforeach
-            </div>
+                @endif
+
+                {{-- Sezione Director (Tutto a destra) --}}
+                @if(isset($movie->director))
+                    <div class="text-end">
+                        <h5 class="m-0">Director</h5>
+                        <div class="d-flex justify-content-end mt-2">
+                            <a href="{{ route('admin.directors.show', $movie->director->id) }}" class="text-decoration-none">
+                                <div class="movie-show-actor-img-wrapper" title="{{ $movie->director->name }}">
+                                    <img class="movie-show-actor-img" src="{{ $movie->director->profile_path ? Storage::url($movie->director->profile_path) : 'https://placehold.co/100x150/481c7a/fff/png?text=Director' }}" alt="{{ $movie->director->name }}">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                @endif
+                </div>
         </div>
-        <div class=" d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-between ">
             <div>
                 <p class=" d-inline m-0">Rating:</p>
                 @for ($i = 0; $i < 10; $i++)

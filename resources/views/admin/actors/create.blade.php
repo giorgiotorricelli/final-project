@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('admin.actors.store', $actor) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.actors.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3 d-flex justify-content-between">
             <div>
